@@ -43,5 +43,299 @@
       "status": "pending_confirmation",
       "total": 122479
     }
+  },
+  {
+    "timestamp": "2026-09-05T00:56:28",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905005628",
+      "goal": "increase laptop accessory sales",
+      "campaign_name": "Laptop Setup Week"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T00:59:45",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905005945",
+      "goal": "increase laptop accessory sales",
+      "campaign_name": "Laptop Setup Week"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:01:21",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905010121",
+      "goal": "Increase laptop accessory sales",
+      "recommended_product_ids": [
+        "A012",
+        "A057",
+        "A059",
+        "L006",
+        "A027"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:05:51",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905010551",
+      "goal": "Increase laptop accessory sales",
+      "recommended_product_ids": [
+        "A012",
+        "A057",
+        "A059",
+        "A027",
+        "A016"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:16:54",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905011654",
+      "goal": "Increase laptop accessory sales",
+      "campaign_category": "USB-C Hub",
+      "recommended_product_ids": [
+        "A054",
+        "A056",
+        "A055"
+      ],
+      "status": "draft"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:00",
+    "event": "product_searched",
+    "details": {
+      "query": "laptop",
+      "max_price": 62990.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L031",
+        "L033",
+        "A057",
+        "A059",
+        "A058",
+        "L037",
+        "L038",
+        "A025",
+        "A055"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:17",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905012217",
+      "goal": "increase laptop accessory sales",
+      "campaign_category": "USB-C Hub",
+      "recommended_product_ids": [
+        "A054",
+        "A056",
+        "A055"
+      ],
+      "status": "draft"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:17",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905012217",
+      "goal": "increase laptop accessory sales",
+      "campaign_name": "USB-C Hub Growth Campaign"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:33",
+    "event": "product_searched",
+    "details": {
+      "query": "mouse",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:39",
+    "event": "product_searched",
+    "details": {
+      "query": "keyboard",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:40",
+    "event": "product_searched",
+    "details": {
+      "query": "combo",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:42",
+    "event": "product_searched",
+    "details": {
+      "query": "keyboard mouse",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:44",
+    "event": "product_searched",
+    "details": {
+      "query": "ASUS",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014",
+        "L006",
+        "L007",
+        "L011",
+        "L012"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:45",
+    "event": "product_searched",
+    "details": {
+      "query": "CW100",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:49",
+    "event": "product_searched",
+    "details": {
+      "query": "A025",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:50",
+    "event": "product_searched",
+    "details": {
+      "query": "A025 Keyboard & Mouse Combo",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 6,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:22:52",
+    "event": "product_searched",
+    "details": {
+      "query": "ASUS CW100",
+      "max_price": 500.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "A027",
+        "L010",
+        "L008",
+        "L009",
+        "L013",
+        "L014",
+        "L006",
+        "L007",
+        "L011",
+        "L012"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T01:30:45",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905013045",
+      "goal": "Increase laptop accessory sales",
+      "campaign_category": "USB-C Hub",
+      "recommended_product_ids": [
+        "A054",
+        "A055",
+        "A056"
+      ],
+      "status": "draft"
+    }
   }
 ]

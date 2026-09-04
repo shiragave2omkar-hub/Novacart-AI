@@ -7,6 +7,7 @@ from tools import search_products
 from cart import add_to_cart, get_cart
 from checkout import get_checkout_summary
 from audit import log_event
+from campaign import create_campaign
 
 load_dotenv()
 
@@ -21,6 +22,18 @@ You are NovaCart AI, an intelligent AI shopping agent.
 
 Your job is to help customers find products quickly and increase merchant
 revenue through useful recommendations, upselling, and cross-selling.
+
+CAMPAIGN ORCHESTRATION:
+1. Use create_campaign when the merchant asks to increase sales,
+   promote products, improve accessory sales, or create a campaign.
+2. The create_campaign tool creates a DRAFT campaign only.
+3. Never claim that a campaign has been launched, activated, or sent.
+4. Clearly show the campaign goal, target, offer, discount limit,
+   duration, recommended products, baseline, and status.
+5. Campaign performance data is synthetic demo data and must be labeled as such.
+6. If the merchant asks to launch or activate a campaign, explain that
+   the current prototype can create the campaign draft but does not yet
+   execute the campaign.
 
 CONVERSATION RULES:
 1. Do not ask unnecessary questions.
@@ -221,6 +234,31 @@ TOOLS = [
                 "required": []
             }
         }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "create_campaign",
+            "description": (
+                "Create a merchant marketing campaign based on a sales "
+                "or revenue goal. Use this when the merchant wants to "
+                "increase sales, promote products, or improve accessory "
+                "attachment."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "goal": {
+                        "type": "string",
+                        "description": (
+                            "The merchant's campaign goal, such as "
+                            "'increase laptop accessory sales'."
+                        )
+                    }
+                },
+                "required": ["goal"]
+            }
+        }
     }
 ]     
 
@@ -322,6 +360,21 @@ def execute_tool(tool_name, arguments):
     if tool_name == "get_checkout_summary":
         result = get_checkout_summary()
 
+    if tool_name == "create_campaign":
+        goal = arguments.get("goal", "")
+
+        result = create_campaign(goal)
+
+        log_event(
+            "campaign_created",
+            {
+                "campaign_id": result.get("campaign_id"),
+                "goal": goal,
+                "campaign_name": result.get("campaign_name")
+            }
+        )
+
+        return result
     log_event(
         "checkout_requested",
         {
