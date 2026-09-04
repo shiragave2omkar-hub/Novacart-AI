@@ -6,6 +6,7 @@ from openai import OpenAI
 from tools import search_products
 from cart import add_to_cart, get_cart
 from checkout import get_checkout_summary
+from audit import log_event
 
 load_dotenv()
 
@@ -272,7 +273,20 @@ def execute_tool(tool_name, arguments):
             category=category
         )
 
-        return results[:10]
+        results = results[:10]
+
+        log_event(
+            "product_searched",
+            {
+                "query": query,
+                "max_price": max_price,
+                "category": category,
+                "results_count": len(results),
+                "result_ids": [product["id"] for product in results]
+            }
+        )
+
+        return results
 
     if tool_name == "add_to_cart":
         product_id = arguments.get("product_id")
@@ -286,18 +300,38 @@ def execute_tool(tool_name, arguments):
         if quantity < 1:
             quantity = 1
 
-        return add_to_cart(
+        result =  add_to_cart(
             product_id,
             quantity
         )
+
+        log_event(
+            "product_added_to_cart",
+            {
+                "product_id": product_id,
+                "quantity": quantity
+            }
+        )
+
+        return result
 
     if tool_name == "get_cart":
 
         return get_cart()
     
     if tool_name == "get_checkout_summary":
-        return get_checkout_summary()
-   
+        result = get_checkout_summary()
+
+    log_event(
+        "checkout_requested",
+        {
+            "status": result.get("status"),
+            "total": result.get("total")
+        }
+    )
+
+    return result
+    
     return {
         "error": f"Unknown tool: {tool_name}"
     }

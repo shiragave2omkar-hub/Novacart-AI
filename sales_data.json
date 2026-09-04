@@ -1,0 +1,83 @@
+[
+  {
+    "order_id": "ORD001",
+    "customer_id": "C001",
+    "items": [
+      {
+        "product_id": "L001",
+        "category": "Laptop",
+        "price": 60990
+      }
+    ]
+  },
+  {
+    "order_id": "ORD002",
+    "customer_id": "C002",
+    "items": [
+      {
+        "product_id": "L002",
+        "category": "Laptop",
+        "price": 65990
+      },
+      {
+        "product_id": "A001",
+        "category": "Mouse",
+        "price": 499
+      }
+    ]
+  },
+  {
+    "order_id": "ORD003",
+    "customer_id": "C003",
+    "items": [
+      {
+        "product_id": "L003",
+        "category": "Laptop",
+        "price": 72990
+      }
+    ]
+  },
+  {
+    "order_id": "ORD004",
+    "customer_id": "C004",
+    "items": [
+      {
+        "product_id": "L004",
+        "category": "Laptop",
+        "price": 78990
+      },
+      {
+        "product_id": "A002",
+        "category": "Laptop Sleeve",
+        "price": 1499
+      }
+    ]
+  },
+  {
+    "order_id": "ORD005",
+    "customer_id": "C005",
+    "items": [
+      {
+        "product_id": "L005",
+        "category": "Laptop",
+        "price": 75990
+      }
+    ]
+  },
+  {
+    "order_id": "ORD006",
+    "customer_id": "C006",
+    "items": [
+      {
+        "product_id": "L006",
+        "category": "Laptop",
+        "price": 69990
+      },
+      {
+        "product_id": "A003",
+        "category": "Keyboard",
+        "price": 999
+      }
+    ]
+  }
+]

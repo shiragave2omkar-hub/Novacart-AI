@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp": "2026-09-05T00:21:11",
+    "event": "test_event",
+    "details": {
+      "message": "Audit trail working"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T00:39:20",
+    "event": "product_searched",
+    "details": {
+      "query": "ASUS laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L002",
+        "L005",
+        "L004",
+        "L003",
+        "L032",
+        "L028",
+        "L036",
+        "L034",
+        "L031"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T00:40:32",
+    "event": "product_added_to_cart",
+    "details": {
+      "product_id": "L001",
+      "quantity": 1
+    }
+  },
+  {
+    "timestamp": "2026-09-05T00:40:39",
+    "event": "checkout_requested",
+    "details": {
+      "status": "pending_confirmation",
+      "total": 122479
+    }
+  }
+]
