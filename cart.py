@@ -1,0 +1,98 @@
+import json
+from pathlib import Path
+
+
+CART_FILE = Path(__file__).parent / "cart.json"
+
+
+def load_cart():
+    if not CART_FILE.exists():
+        return []
+
+    with open(CART_FILE, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def save_cart(cart):
+    with open(CART_FILE, "w", encoding="utf-8") as file:
+        json.dump(cart, file, indent=2, ensure_ascii=False)
+
+
+def add_to_cart(product_id, quantity=1):
+    cart = load_cart()
+
+    for item in cart:
+        if item["product_id"] == product_id:
+            item["quantity"] += quantity
+            save_cart(cart)
+            return cart
+
+    cart.append({
+        "product_id": product_id,
+        "quantity": quantity
+    })
+
+    save_cart(cart)
+
+    return cart
+
+
+def remove_from_cart(product_id):
+    cart = load_cart()
+
+    cart = [
+        item for item in cart
+        if item["product_id"] != product_id
+    ]
+
+    save_cart(cart)
+
+    return cart
+
+
+def clear_cart():
+    save_cart([])
+    return []
+
+
+def get_cart():
+    cart = load_cart()
+
+    with open(
+        Path(__file__).parent / "products.json",
+        "r",
+        encoding="utf-8"
+    ) as file:
+        products = json.load(file)
+
+    product_map = {
+        product["id"]: product
+        for product in products
+    }
+
+    detailed_cart = []
+    total = 0
+
+    for item in cart:
+        product = product_map.get(item["product_id"])
+
+        if not product:
+            continue
+
+        quantity = item["quantity"]
+        subtotal = product["price"] * quantity
+
+        detailed_cart.append({
+            "id": product["id"],
+            "name": product["name"],
+            "price": product["price"],
+            "quantity": quantity,
+            "subtotal": subtotal
+        })
+
+        total += subtotal
+
+    return {
+        "items": detailed_cart,
+        "total": total
+    }
