@@ -1,0 +1,502 @@
+[
+  {
+    "id": "P001",
+    "name": "AeroBook 14 Laptop",
+    "category": "Laptops",
+    "price": 58990,
+    "brand": "AeroTech",
+    "description": "14-inch laptop with Intel Core i5 processor, 16GB RAM and 512GB SSD.",
+    "tags": ["laptop", "student", "office", "productivity"],
+    "use_cases": ["college", "office", "coding", "study"]
+  },
+  {
+    "id": "P002",
+    "name": "AeroBook 15 Pro Laptop",
+    "category": "Laptops",
+    "price": 74990,
+    "brand": "AeroTech",
+    "description": "15.6-inch laptop with Intel Core i7 processor, 16GB RAM and 1TB SSD.",
+    "tags": ["laptop", "performance", "professional", "coding"],
+    "use_cases": ["software development", "video editing", "office", "college"]
+  },
+  {
+    "id": "P003",
+    "name": "TechGuard 15.6 Laptop Sleeve",
+    "category": "Laptop Accessories",
+    "price": 899,
+    "brand": "TechGuard",
+    "description": "Water-resistant padded laptop sleeve designed for laptops up to 15.6 inches.",
+    "tags": ["laptop", "sleeve", "protection", "travel"],
+    "use_cases": ["college", "office", "travel"]
+  },
+  {
+    "id": "P004",
+    "name": "ClickPro Wireless Mouse",
+    "category": "Computer Accessories",
+    "price": 699,
+    "brand": "ClickPro",
+    "description": "Ergonomic wireless mouse with adjustable DPI and silent-click buttons.",
+    "tags": ["mouse", "wireless", "computer", "office"],
+    "use_cases": ["office", "college", "coding", "gaming"]
+  },
+  {
+    "id": "P005",
+    "name": "KeyPro Mechanical Keyboard",
+    "category": "Computer Accessories",
+    "price": 2499,
+    "brand": "KeyPro",
+    "description": "Compact mechanical keyboard with tactile switches and USB-C connectivity.",
+    "tags": ["keyboard", "mechanical", "computer", "gaming"],
+    "use_cases": ["coding", "gaming", "office"]
+  },
+  {
+    "id": "P006",
+    "name": "DeskHub USB-C Dock",
+    "category": "Computer Accessories",
+    "price": 3299,
+    "brand": "DeskHub",
+    "description": "USB-C docking station with HDMI, USB 3.0, Ethernet and power delivery.",
+    "tags": ["usb-c", "dock", "laptop", "connectivity"],
+    "use_cases": ["office", "work from home", "productivity"]
+  },
+  {
+    "id": "P007",
+    "name": "ViewMax 24 Monitor",
+    "category": "Monitors",
+    "price": 10990,
+    "brand": "ViewMax",
+    "description": "24-inch Full HD IPS monitor with 100Hz refresh rate and HDMI connectivity.",
+    "tags": ["monitor", "display", "full hd", "ips"],
+    "use_cases": ["coding", "office", "study", "gaming"]
+  },
+  {
+    "id": "P008",
+    "name": "ViewMax 27 QHD Monitor",
+    "category": "Monitors",
+    "price": 18990,
+    "brand": "ViewMax",
+    "description": "27-inch QHD IPS monitor with 165Hz refresh rate and adjustable stand.",
+    "tags": ["monitor", "qhd", "gaming", "high refresh rate"],
+    "use_cases": ["gaming", "design", "video editing", "coding"]
+  },
+  {
+    "id": "P009",
+    "name": "SoundMax AirBeat Headphones",
+    "category": "Headphones",
+    "price": 3499,
+    "brand": "SoundMax",
+    "description": "Wireless over-ear headphones with active noise cancellation and 35-hour battery life.",
+    "tags": ["headphones", "wireless", "anc", "music", "travel"],
+    "use_cases": ["travel", "study", "music", "office"]
+  },
+  {
+    "id": "P010",
+    "name": "SoundMax Buds Lite",
+    "category": "Earbuds",
+    "price": 1999,
+    "brand": "SoundMax",
+    "description": "True wireless earbuds with low-latency mode and up to 24 hours of total battery life.",
+    "tags": ["earbuds", "wireless", "music", "portable"],
+    "use_cases": ["commuting", "gym", "music", "college"]
+  },
+  {
+    "id": "P011",
+    "name": "SoundMax Studio Pro",
+    "category": "Headphones",
+    "price": 7999,
+    "brand": "SoundMax",
+    "description": "Premium wireless headphones with adaptive noise cancellation and high-resolution audio.",
+    "tags": ["headphones", "premium", "anc", "audio"],
+    "use_cases": ["music", "travel", "professional audio"]
+  },
+  {
+    "id": "P012",
+    "name": "PowerCore 20000 Power Bank",
+    "category": "Power Accessories",
+    "price": 1799,
+    "brand": "PowerCore",
+    "description": "20,000mAh power bank with 22.5W fast charging and dual USB outputs.",
+    "tags": ["power bank", "charging", "travel", "portable"],
+    "use_cases": ["travel", "college", "commuting"]
+  },
+  {
+    "id": "P013",
+    "name": "PowerCore 65W GaN Charger",
+    "category": "Chargers",
+    "price": 2999,
+    "brand": "PowerCore",
+    "description": "65W GaN charger with USB-C and USB-A ports for laptops, tablets and phones.",
+    "tags": ["charger", "gan", "usb-c", "fast charging"],
+    "use_cases": ["travel", "office", "laptop", "phone"]
+  },
+  {
+    "id": "P014",
+    "name": "FlexCharge USB-C Cable",
+    "category": "Charging Accessories",
+    "price": 499,
+    "brand": "FlexCharge",
+    "description": "1.5-meter braided USB-C cable supporting fast charging and data transfer.",
+    "tags": ["usb-c", "cable", "charging", "fast charging"],
+    "use_cases": ["phone", "laptop", "travel"]
+  },
+  {
+    "id": "P015",
+    "name": "PixelPro 1080p Webcam",
+    "category": "Webcams",
+    "price": 2299,
+    "brand": "PixelPro",
+    "description": "1080p webcam with dual microphones and automatic light correction.",
+    "tags": ["webcam", "video calls", "streaming", "office"],
+    "use_cases": ["online classes", "work from home", "streaming", "meetings"]
+  },
+  {
+    "id": "P016",
+    "name": "GameCore Wireless Controller",
+    "category": "Gaming",
+    "price": 2799,
+    "brand": "GameCore",
+    "description": "Wireless gaming controller with vibration feedback and multi-platform support.",
+    "tags": ["controller", "gaming", "wireless", "console"],
+    "use_cases": ["gaming", "pc gaming"]
+  },
+  {
+    "id": "P017",
+    "name": "GameCore RGB Gaming Mouse",
+    "category": "Gaming",
+    "price": 1599,
+    "brand": "GameCore",
+    "description": "Lightweight gaming mouse with adjustable DPI and programmable buttons.",
+    "tags": ["gaming mouse", "rgb", "gaming", "mouse"],
+    "use_cases": ["gaming", "esports"]
+  },
+  {
+    "id": "P018",
+    "name": "GameCore XL Mouse Pad",
+    "category": "Gaming Accessories",
+    "price": 899,
+    "brand": "GameCore",
+    "description": "Large anti-slip gaming mouse pad with water-resistant surface.",
+    "tags": ["mouse pad", "gaming", "desk"],
+    "use_cases": ["gaming", "office"]
+  },
+  {
+    "id": "P019",
+    "name": "GameCore Mechanical Gaming Keyboard",
+    "category": "Gaming",
+    "price": 3499,
+    "brand": "GameCore",
+    "description": "Full-size mechanical gaming keyboard with RGB backlighting and tactile switches.",
+    "tags": ["keyboard", "mechanical", "gaming", "rgb"],
+    "use_cases": ["gaming", "esports", "coding"]
+  },
+  {
+    "id": "P020",
+    "name": "GameCore 27 Gaming Monitor",
+    "category": "Gaming",
+    "price": 22990,
+    "brand": "GameCore",
+    "description": "27-inch QHD gaming monitor with 180Hz refresh rate and adaptive sync.",
+    "tags": ["gaming monitor", "qhd", "180hz", "gaming"],
+    "use_cases": ["gaming", "esports"]
+  },
+  {
+    "id": "P021",
+    "name": "FitTrack Active Smartwatch",
+    "category": "Fitness",
+    "price": 3999,
+    "brand": "FitTrack",
+    "description": "Fitness smartwatch with heart-rate tracking, sleep monitoring and multiple workout modes.",
+    "tags": ["smartwatch", "fitness", "health", "activity"],
+    "use_cases": ["fitness", "running", "daily activity"]
+  },
+  {
+    "id": "P022",
+    "name": "FitTrack Pro Smartwatch",
+    "category": "Fitness",
+    "price": 7999,
+    "brand": "FitTrack",
+    "description": "Advanced smartwatch with GPS, workout tracking and AMOLED display.",
+    "tags": ["smartwatch", "gps", "fitness", "running"],
+    "use_cases": ["running", "cycling", "fitness"]
+  },
+  {
+    "id": "P023",
+    "name": "HydraSteel 750ml Bottle",
+    "category": "Fitness Accessories",
+    "price": 899,
+    "brand": "HydraSteel",
+    "description": "Double-wall insulated stainless steel bottle that keeps drinks cold for up to 24 hours.",
+    "tags": ["water bottle", "fitness", "steel", "insulated"],
+    "use_cases": ["gym", "running", "travel", "college"]
+  },
+  {
+    "id": "P024",
+    "name": "RunFlex Performance Shoes",
+    "category": "Running",
+    "price": 3499,
+    "brand": "RunFlex",
+    "description": "Lightweight running shoes with breathable mesh upper and cushioned sole.",
+    "tags": ["running shoes", "sports", "fitness", "running"],
+    "use_cases": ["running", "gym", "walking"]
+  },
+  {
+    "id": "P025",
+    "name": "RunFlex Pro Running Shoes",
+    "category": "Running",
+    "price": 5999,
+    "brand": "RunFlex",
+    "description": "Performance running shoes with responsive cushioning and enhanced heel support.",
+    "tags": ["running shoes", "premium", "running", "sports"],
+    "use_cases": ["running", "marathon", "training"]
+  },
+  {
+    "id": "P026",
+    "name": "ActiveDry Sports T-Shirt",
+    "category": "Sportswear",
+    "price": 999,
+    "brand": "ActiveDry",
+    "description": "Quick-dry lightweight sports T-shirt designed for workouts and outdoor activities.",
+    "tags": ["t-shirt", "sports", "gym", "quick dry"],
+    "use_cases": ["gym", "running", "sports"]
+  },
+  {
+    "id": "P027",
+    "name": "ActiveDry Training Shorts",
+    "category": "Sportswear",
+    "price": 1199,
+    "brand": "ActiveDry",
+    "description": "Lightweight training shorts with breathable fabric and zippered pockets.",
+    "tags": ["shorts", "gym", "sports", "training"],
+    "use_cases": ["gym", "running", "sports"]
+  },
+  {
+    "id": "P028",
+    "name": "TrailPack 25L Backpack",
+    "category": "Travel",
+    "price": 2499,
+    "brand": "TrailPack",
+    "description": "25-liter water-resistant backpack with padded laptop compartment and multiple pockets.",
+    "tags": ["backpack", "travel", "laptop", "college"],
+    "use_cases": ["college", "travel", "office", "hiking"]
+  },
+  {
+    "id": "P029",
+    "name": "TrailPack 40L Travel Backpack",
+    "category": "Travel",
+    "price": 3999,
+    "brand": "TrailPack",
+    "description": "40-liter travel backpack with expandable storage, luggage strap and padded compartments.",
+    "tags": ["backpack", "travel", "large", "luggage"],
+    "use_cases": ["travel", "weekend trips", "business travel"]
+  },
+  {
+    "id": "P030",
+    "name": "Voyage Hard Shell Cabin Bag",
+    "category": "Luggage",
+    "price": 4999,
+    "brand": "Voyage",
+    "description": "20-inch hard-shell cabin suitcase with four spinner wheels and combination lock.",
+    "tags": ["suitcase", "luggage", "travel", "cabin"],
+    "use_cases": ["air travel", "business travel", "vacation"]
+  },
+  {
+    "id": "P031",
+    "name": "Voyage Packing Cube Set",
+    "category": "Travel Accessories",
+    "price": 799,
+    "brand": "Voyage",
+    "description": "Set of four lightweight packing cubes for organizing clothes and accessories.",
+    "tags": ["packing cubes", "travel", "organization"],
+    "use_cases": ["travel", "vacation", "business travel"]
+  },
+  {
+    "id": "P032",
+    "name": "Voyage Travel Organizer",
+    "category": "Travel Accessories",
+    "price": 699,
+    "brand": "Voyage",
+    "description": "Compact travel organizer for passports, cards, cables and other essentials.",
+    "tags": ["travel organizer", "passport", "travel", "accessories"],
+    "use_cases": ["travel", "business travel"]
+  },
+  {
+    "id": "P033",
+    "name": "UrbanFit Everyday Sneakers",
+    "category": "Footwear",
+    "price": 2999,
+    "brand": "UrbanFit",
+    "description": "Casual sneakers with cushioned insole and breathable upper for everyday wear.",
+    "tags": ["sneakers", "casual", "shoes", "fashion"],
+    "use_cases": ["college", "casual", "daily wear"]
+  },
+  {
+    "id": "P034",
+    "name": "UrbanFit Classic Hoodie",
+    "category": "Fashion",
+    "price": 1999,
+    "brand": "UrbanFit",
+    "description": "Soft cotton-blend hoodie with regular fit and kangaroo pocket.",
+    "tags": ["hoodie", "casual", "fashion", "winter"],
+    "use_cases": ["college", "casual", "travel"]
+  },
+  {
+    "id": "P035",
+    "name": "UrbanFit Slim Backpack",
+    "category": "Bags",
+    "price": 1799,
+    "brand": "UrbanFit",
+    "description": "Minimal everyday backpack with padded laptop compartment and hidden security pocket.",
+    "tags": ["backpack", "laptop", "college", "office"],
+    "use_cases": ["college", "office", "daily commute"]
+  },
+  {
+    "id": "P036",
+    "name": "HomeBrew Compact Coffee Maker",
+    "category": "Kitchen",
+    "price": 3499,
+    "brand": "HomeBrew",
+    "description": "Compact drip coffee maker with reusable filter and 600ml brewing capacity.",
+    "tags": ["coffee maker", "coffee", "kitchen", "appliance"],
+    "use_cases": ["home", "office", "coffee"]
+  },
+  {
+    "id": "P037",
+    "name": "HomeBrew Electric Kettle",
+    "category": "Kitchen",
+    "price": 1499,
+    "brand": "HomeBrew",
+    "description": "1.5-liter stainless steel electric kettle with automatic shut-off.",
+    "tags": ["kettle", "tea", "coffee", "kitchen"],
+    "use_cases": ["home", "office", "college"]
+  },
+  {
+    "id": "P038",
+    "name": "HomeBrew Coffee Grinder",
+    "category": "Kitchen",
+    "price": 2199,
+    "brand": "HomeBrew",
+    "description": "Electric coffee grinder with adjustable grind settings for different brewing methods.",
+    "tags": ["coffee grinder", "coffee", "kitchen"],
+    "use_cases": ["coffee", "home"]
+  },
+  {
+    "id": "P039",
+    "name": "StudyMate Desk Lamp",
+    "category": "Study Accessories",
+    "price": 1299,
+    "brand": "StudyMate",
+    "description": "Adjustable LED desk lamp with three brightness levels and USB charging port.",
+    "tags": ["desk lamp", "study", "led", "office"],
+    "use_cases": ["study", "college", "office"]
+  },
+  {
+    "id": "P040",
+    "name": "StudyMate Laptop Stand",
+    "category": "Desk Accessories",
+    "price": 1499,
+    "brand": "StudyMate",
+    "description": "Adjustable aluminum laptop stand designed to improve screen height and desk ergonomics.",
+    "tags": ["laptop stand", "desk", "ergonomic", "laptop"],
+    "use_cases": ["study", "office", "coding"]
+  },
+  {
+    "id": "P041",
+    "name": "StudyMate Notebook Set",
+    "category": "Stationery",
+    "price": 499,
+    "brand": "StudyMate",
+    "description": "Set of three hardcover ruled notebooks suitable for study and everyday notes.",
+    "tags": ["notebook", "stationery", "study", "college"],
+    "use_cases": ["study", "college", "office"]
+  },
+  {
+    "id": "P042",
+    "name": "CleanTech Laptop Cleaning Kit",
+    "category": "Computer Accessories",
+    "price": 399,
+    "brand": "CleanTech",
+    "description": "Complete laptop and screen cleaning kit with microfiber cloth, brush and cleaning solution.",
+    "tags": ["cleaning", "laptop", "screen", "maintenance"],
+    "use_cases": ["laptop", "office", "college"]
+  },
+  {
+    "id": "P043",
+    "name": "SafeGuard Surge Protector",
+    "category": "Power Accessories",
+    "price": 1299,
+    "brand": "SafeGuard",
+    "description": "Six-socket surge protector with overload protection and individual power switches.",
+    "tags": ["surge protector", "power", "electronics", "safety"],
+    "use_cases": ["office", "home", "computer setup"]
+  },
+  {
+    "id": "P044",
+    "name": "SoundMax Portable Bluetooth Speaker",
+    "category": "Speakers",
+    "price": 2499,
+    "brand": "SoundMax",
+    "description": "Compact Bluetooth speaker with 12-hour battery life and IPX5 water resistance.",
+    "tags": ["speaker", "bluetooth", "portable", "music"],
+    "use_cases": ["travel", "party", "outdoor", "music"]
+  },
+  {
+    "id": "P045",
+    "name": "PixelPro Action Camera",
+    "category": "Cameras",
+    "price": 8999,
+    "brand": "PixelPro",
+    "description": "4K action camera with electronic image stabilization and waterproof housing.",
+    "tags": ["action camera", "4k", "camera", "travel"],
+    "use_cases": ["travel", "adventure", "cycling", "vlogging"]
+  },
+  {
+    "id": "P046",
+    "name": "PixelPro 128GB MicroSD Card",
+    "category": "Storage",
+    "price": 999,
+    "brand": "PixelPro",
+    "description": "128GB high-speed microSD card suitable for action cameras and smartphones.",
+    "tags": ["memory card", "microsd", "storage", "camera"],
+    "use_cases": ["camera", "phone", "video recording"]
+  },
+  {
+    "id": "P047",
+    "name": "PixelPro Compact Tripod",
+    "category": "Camera Accessories",
+    "price": 1299,
+    "brand": "PixelPro",
+    "description": "Lightweight adjustable tripod compatible with cameras and smartphones.",
+    "tags": ["tripod", "camera", "vlogging", "photography"],
+    "use_cases": ["photography", "vlogging", "travel"]
+  },
+  {
+    "id": "P048",
+    "name": "PixelPro Camera Sling Bag",
+    "category": "Camera Accessories",
+    "price": 1799,
+    "brand": "PixelPro",
+    "description": "Compact padded camera sling bag with adjustable dividers and weather-resistant exterior.",
+    "tags": ["camera bag", "camera", "travel", "photography"],
+    "use_cases": ["photography", "travel", "vlogging"]
+  },
+  {
+    "id": "P049",
+    "name": "PowerCore Wireless Charging Pad",
+    "category": "Charging Accessories",
+    "price": 1199,
+    "brand": "PowerCore",
+    "description": "15W wireless charging pad compatible with supported smartphones and earbuds.",
+    "tags": ["wireless charger", "charging", "phone", "desk"],
+    "use_cases": ["office", "home", "desk"]
+  },
+  {
+    "id": "P050",
+    "name": "FlexShield Phone Case",
+    "category": "Phone Accessories",
+    "price": 699,
+    "brand": "FlexShield",
+    "description": "Shock-resistant slim phone case with raised edges for screen and camera protection.",
+    "tags": ["phone case", "protection", "smartphone"],
+    "use_cases": ["daily use", "travel", "college"]
+  }
+]

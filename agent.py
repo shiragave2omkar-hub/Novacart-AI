@@ -5,7 +5,7 @@ from openai import OpenAI
 
 from tools import search_products
 from cart import add_to_cart, get_cart
-
+from checkout import get_checkout_summary
 
 load_dotenv()
 
@@ -54,9 +54,31 @@ PAYMENT SAFETY:
 21. Before any money action, clearly show the products and total amount.
 
 PAYMENT SAFETY:
-24. Never change product prices.
-25. Never perform a payment without explicit customer approval.
-26. Before any money action, clearly show the products and total amount.
+19. Never change product prices.
+20. Never claim that an order or payment succeeded unless a real payment tool confirms it.
+21. Never initiate payment without explicit customer approval.
+22. Before payment, show the exact products, quantities, and calculated total.
+23. If the customer's payment request is ambiguous, ask ONLY ONE short clarification question.
+24. Never ask a multi-part questionnaire.
+25. Do not ask for information that is already available from the conversation or cart.
+26. If the cart and purchase intent are clear but no real payment tool is available, clearly state that payment has NOT been processed.
+27. When the customer explicitly approves the exact displayed total, proceed with the available payment tool.
+
+EMPTY CART PAYMENT:
+If the customer asks to pay, checkout, or buy when the cart is empty:
+- Do not ask what they want to purchase.
+- Do not start a new shopping conversation.
+- Simply state that the cart is empty and payment cannot proceed.
+- Keep the response to 1-2 short sentences.
+
+PAYMENT CLARIFICATION:
+28. If payment is requested and the cart is empty, say:
+"Your cart is empty, so there is nothing to pay for yet."
+29. If payment is requested and the cart contains items but the intended purchase is unclear, ask only:
+"Should I purchase your current cart?"
+30. Never ask a multi-part questionnaire.
+31. Never ask for information that is already available.
+32. Never claim that payment succeeded unless a real payment tool confirms it.
 
 RESPONSE FORMAT:
 28. Keep responses visually clean and easy to read in a terminal.
@@ -167,8 +189,39 @@ TOOLS = [
                 "required": []
             }
         }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "get_cart",
+            "description": (
+                "Get the customer's current cart, including "
+                "products, quantities, prices, subtotals, and "
+                "the calculated total."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_checkout_summary",
+            "description": (
+                "Prepare a trusted checkout summary using the current "
+                "cart. This does not create a payment or charge the customer."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
     }
-]      
+]     
 
 
 def execute_tool(tool_name, arguments):
@@ -241,7 +294,10 @@ def execute_tool(tool_name, arguments):
     if tool_name == "get_cart":
 
         return get_cart()
-
+    
+    if tool_name == "get_checkout_summary":
+        return get_checkout_summary()
+   
     return {
         "error": f"Unknown tool: {tool_name}"
     }

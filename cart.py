@@ -1,6 +1,6 @@
+from tools import load_products
 import json
 from pathlib import Path
-
 
 CART_FILE = Path(__file__).parent / "cart.json"
 
@@ -19,13 +19,31 @@ def save_cart(cart):
 
 
 def add_to_cart(product_id, quantity=1):
+    products = load_products()
+
+    # Validate product ID before adding
+    product_ids = {product["id"] for product in products}
+
+    if product_id not in product_ids:
+        return {
+            "error": f"Product {product_id} does not exist in the catalog."
+        }
+
+    try:
+        quantity = int(quantity)
+    except (ValueError, TypeError):
+        quantity = 1
+
+    if quantity < 1:
+        quantity = 1
+
     cart = load_cart()
 
     for item in cart:
         if item["product_id"] == product_id:
             item["quantity"] += quantity
             save_cart(cart)
-            return cart
+            return get_cart()
 
     cart.append({
         "product_id": product_id,
@@ -33,8 +51,7 @@ def add_to_cart(product_id, quantity=1):
     })
 
     save_cart(cart)
-
-    return cart
+    return get_cart()
 
 
 def remove_from_cart(product_id):
@@ -46,24 +63,17 @@ def remove_from_cart(product_id):
     ]
 
     save_cart(cart)
-
-    return cart
+    return get_cart()
 
 
 def clear_cart():
     save_cart([])
-    return []
+    return get_cart()
 
 
 def get_cart():
     cart = load_cart()
-
-    with open(
-        Path(__file__).parent / "products.json",
-        "r",
-        encoding="utf-8"
-    ) as file:
-        products = json.load(file)
+    products = load_products()
 
     product_map = {
         product["id"]: product
@@ -80,12 +90,18 @@ def get_cart():
             continue
 
         quantity = item["quantity"]
-        subtotal = product["price"] * quantity
+        price = product.get("price_inr")
+
+        if price is None:
+            continue
+
+        subtotal = price * quantity
 
         detailed_cart.append({
             "id": product["id"],
             "name": product["name"],
-            "price": product["price"],
+            "brand": product.get("brand"),
+            "price": price,
             "quantity": quantity,
             "subtotal": subtotal
         })

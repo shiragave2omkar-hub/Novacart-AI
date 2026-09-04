@@ -60,54 +60,8 @@ def detect_intents(query):
 
     intents = []
 
-    intent_keywords = {
-        "coding": [
-            "coding",
-            "programming",
-            "developer",
-            "development",
-            "software",
-            "programmer"
-        ],
-        "gaming": [
-            "gaming",
-            "gaming laptop",
-            "games",
-            "gamer"
-        ],
-        "student": [
-            "student",
-            "college",
-            "university",
-            "school",
-            "study",
-            "studying"
-        ],
-        "portable": [
-            "portable",
-            "lightweight",
-            "light",
-            "easy to carry"
-        ],
-        "performance": [
-            "performance",
-            "powerful",
-            "fast",
-            "high performance",
-            "power"
-        ],
-        "ml": [
-            "ml",
-            "machine learning",
-            "deep learning",
-            "artificial intelligence",
-            "ai",
-            "model training"
-        ]
-    }
-
-    for intent, keywords in intent_keywords.items():
-        if any(keyword in query for keyword in keywords):
+    for intent in INTENT_WEIGHTS:
+        if intent in query:
             intents.append(intent)
 
     return intents
@@ -127,7 +81,7 @@ def extract_number(text):
 
 
 def score_product(product, intents, max_price=None):
-    score = 0
+    score = 
 
     specs = product.get("specifications", {})
     text = " ".join([
@@ -303,11 +257,7 @@ def search_products(query="", max_price=None, category=None):
             " ".join(str(v) for v in specifications.values())
         ]).lower()
 
-        score = score_product(
-    product,
-    intents,
-    max_price=max_price
-)
+        score = 0
 
         # Category match
         if category:

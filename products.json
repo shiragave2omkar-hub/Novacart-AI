@@ -1,502 +1,3804 @@
-[
-  {
-    "id": "P001",
-    "name": "AeroBook 14 Laptop",
-    "category": "Laptops",
-    "price": 58990,
-    "brand": "AeroTech",
-    "description": "14-inch laptop with Intel Core i5 processor, 16GB RAM and 512GB SSD.",
-    "tags": ["laptop", "student", "office", "productivity"],
-    "use_cases": ["college", "office", "coding", "study"]
-  },
-  {
-    "id": "P002",
-    "name": "AeroBook 15 Pro Laptop",
-    "category": "Laptops",
-    "price": 74990,
-    "brand": "AeroTech",
-    "description": "15.6-inch laptop with Intel Core i7 processor, 16GB RAM and 1TB SSD.",
-    "tags": ["laptop", "performance", "professional", "coding"],
-    "use_cases": ["software development", "video editing", "office", "college"]
-  },
-  {
-    "id": "P003",
-    "name": "TechGuard 15.6 Laptop Sleeve",
-    "category": "Laptop Accessories",
-    "price": 899,
-    "brand": "TechGuard",
-    "description": "Water-resistant padded laptop sleeve designed for laptops up to 15.6 inches.",
-    "tags": ["laptop", "sleeve", "protection", "travel"],
-    "use_cases": ["college", "office", "travel"]
-  },
-  {
-    "id": "P004",
-    "name": "ClickPro Wireless Mouse",
-    "category": "Computer Accessories",
-    "price": 699,
-    "brand": "ClickPro",
-    "description": "Ergonomic wireless mouse with adjustable DPI and silent-click buttons.",
-    "tags": ["mouse", "wireless", "computer", "office"],
-    "use_cases": ["office", "college", "coding", "gaming"]
-  },
-  {
-    "id": "P005",
-    "name": "KeyPro Mechanical Keyboard",
-    "category": "Computer Accessories",
-    "price": 2499,
-    "brand": "KeyPro",
-    "description": "Compact mechanical keyboard with tactile switches and USB-C connectivity.",
-    "tags": ["keyboard", "mechanical", "computer", "gaming"],
-    "use_cases": ["coding", "gaming", "office"]
-  },
-  {
-    "id": "P006",
-    "name": "DeskHub USB-C Dock",
-    "category": "Computer Accessories",
-    "price": 3299,
-    "brand": "DeskHub",
-    "description": "USB-C docking station with HDMI, USB 3.0, Ethernet and power delivery.",
-    "tags": ["usb-c", "dock", "laptop", "connectivity"],
-    "use_cases": ["office", "work from home", "productivity"]
-  },
-  {
-    "id": "P007",
-    "name": "ViewMax 24 Monitor",
-    "category": "Monitors",
-    "price": 10990,
-    "brand": "ViewMax",
-    "description": "24-inch Full HD IPS monitor with 100Hz refresh rate and HDMI connectivity.",
-    "tags": ["monitor", "display", "full hd", "ips"],
-    "use_cases": ["coding", "office", "study", "gaming"]
-  },
-  {
-    "id": "P008",
-    "name": "ViewMax 27 QHD Monitor",
-    "category": "Monitors",
-    "price": 18990,
-    "brand": "ViewMax",
-    "description": "27-inch QHD IPS monitor with 165Hz refresh rate and adjustable stand.",
-    "tags": ["monitor", "qhd", "gaming", "high refresh rate"],
-    "use_cases": ["gaming", "design", "video editing", "coding"]
-  },
-  {
-    "id": "P009",
-    "name": "SoundMax AirBeat Headphones",
-    "category": "Headphones",
-    "price": 3499,
-    "brand": "SoundMax",
-    "description": "Wireless over-ear headphones with active noise cancellation and 35-hour battery life.",
-    "tags": ["headphones", "wireless", "anc", "music", "travel"],
-    "use_cases": ["travel", "study", "music", "office"]
-  },
-  {
-    "id": "P010",
-    "name": "SoundMax Buds Lite",
-    "category": "Earbuds",
-    "price": 1999,
-    "brand": "SoundMax",
-    "description": "True wireless earbuds with low-latency mode and up to 24 hours of total battery life.",
-    "tags": ["earbuds", "wireless", "music", "portable"],
-    "use_cases": ["commuting", "gym", "music", "college"]
-  },
-  {
-    "id": "P011",
-    "name": "SoundMax Studio Pro",
-    "category": "Headphones",
-    "price": 7999,
-    "brand": "SoundMax",
-    "description": "Premium wireless headphones with adaptive noise cancellation and high-resolution audio.",
-    "tags": ["headphones", "premium", "anc", "audio"],
-    "use_cases": ["music", "travel", "professional audio"]
-  },
-  {
-    "id": "P012",
-    "name": "PowerCore 20000 Power Bank",
-    "category": "Power Accessories",
-    "price": 1799,
-    "brand": "PowerCore",
-    "description": "20,000mAh power bank with 22.5W fast charging and dual USB outputs.",
-    "tags": ["power bank", "charging", "travel", "portable"],
-    "use_cases": ["travel", "college", "commuting"]
-  },
-  {
-    "id": "P013",
-    "name": "PowerCore 65W GaN Charger",
-    "category": "Chargers",
-    "price": 2999,
-    "brand": "PowerCore",
-    "description": "65W GaN charger with USB-C and USB-A ports for laptops, tablets and phones.",
-    "tags": ["charger", "gan", "usb-c", "fast charging"],
-    "use_cases": ["travel", "office", "laptop", "phone"]
-  },
-  {
-    "id": "P014",
-    "name": "FlexCharge USB-C Cable",
-    "category": "Charging Accessories",
-    "price": 499,
-    "brand": "FlexCharge",
-    "description": "1.5-meter braided USB-C cable supporting fast charging and data transfer.",
-    "tags": ["usb-c", "cable", "charging", "fast charging"],
-    "use_cases": ["phone", "laptop", "travel"]
-  },
-  {
-    "id": "P015",
-    "name": "PixelPro 1080p Webcam",
-    "category": "Webcams",
-    "price": 2299,
-    "brand": "PixelPro",
-    "description": "1080p webcam with dual microphones and automatic light correction.",
-    "tags": ["webcam", "video calls", "streaming", "office"],
-    "use_cases": ["online classes", "work from home", "streaming", "meetings"]
-  },
-  {
-    "id": "P016",
-    "name": "GameCore Wireless Controller",
-    "category": "Gaming",
-    "price": 2799,
-    "brand": "GameCore",
-    "description": "Wireless gaming controller with vibration feedback and multi-platform support.",
-    "tags": ["controller", "gaming", "wireless", "console"],
-    "use_cases": ["gaming", "pc gaming"]
-  },
-  {
-    "id": "P017",
-    "name": "GameCore RGB Gaming Mouse",
-    "category": "Gaming",
-    "price": 1599,
-    "brand": "GameCore",
-    "description": "Lightweight gaming mouse with adjustable DPI and programmable buttons.",
-    "tags": ["gaming mouse", "rgb", "gaming", "mouse"],
-    "use_cases": ["gaming", "esports"]
-  },
-  {
-    "id": "P018",
-    "name": "GameCore XL Mouse Pad",
-    "category": "Gaming Accessories",
-    "price": 899,
-    "brand": "GameCore",
-    "description": "Large anti-slip gaming mouse pad with water-resistant surface.",
-    "tags": ["mouse pad", "gaming", "desk"],
-    "use_cases": ["gaming", "office"]
-  },
-  {
-    "id": "P019",
-    "name": "GameCore Mechanical Gaming Keyboard",
-    "category": "Gaming",
-    "price": 3499,
-    "brand": "GameCore",
-    "description": "Full-size mechanical gaming keyboard with RGB backlighting and tactile switches.",
-    "tags": ["keyboard", "mechanical", "gaming", "rgb"],
-    "use_cases": ["gaming", "esports", "coding"]
-  },
-  {
-    "id": "P020",
-    "name": "GameCore 27 Gaming Monitor",
-    "category": "Gaming",
-    "price": 22990,
-    "brand": "GameCore",
-    "description": "27-inch QHD gaming monitor with 180Hz refresh rate and adaptive sync.",
-    "tags": ["gaming monitor", "qhd", "180hz", "gaming"],
-    "use_cases": ["gaming", "esports"]
-  },
-  {
-    "id": "P021",
-    "name": "FitTrack Active Smartwatch",
-    "category": "Fitness",
-    "price": 3999,
-    "brand": "FitTrack",
-    "description": "Fitness smartwatch with heart-rate tracking, sleep monitoring and multiple workout modes.",
-    "tags": ["smartwatch", "fitness", "health", "activity"],
-    "use_cases": ["fitness", "running", "daily activity"]
-  },
-  {
-    "id": "P022",
-    "name": "FitTrack Pro Smartwatch",
-    "category": "Fitness",
-    "price": 7999,
-    "brand": "FitTrack",
-    "description": "Advanced smartwatch with GPS, workout tracking and AMOLED display.",
-    "tags": ["smartwatch", "gps", "fitness", "running"],
-    "use_cases": ["running", "cycling", "fitness"]
-  },
-  {
-    "id": "P023",
-    "name": "HydraSteel 750ml Bottle",
-    "category": "Fitness Accessories",
-    "price": 899,
-    "brand": "HydraSteel",
-    "description": "Double-wall insulated stainless steel bottle that keeps drinks cold for up to 24 hours.",
-    "tags": ["water bottle", "fitness", "steel", "insulated"],
-    "use_cases": ["gym", "running", "travel", "college"]
-  },
-  {
-    "id": "P024",
-    "name": "RunFlex Performance Shoes",
-    "category": "Running",
-    "price": 3499,
-    "brand": "RunFlex",
-    "description": "Lightweight running shoes with breathable mesh upper and cushioned sole.",
-    "tags": ["running shoes", "sports", "fitness", "running"],
-    "use_cases": ["running", "gym", "walking"]
-  },
-  {
-    "id": "P025",
-    "name": "RunFlex Pro Running Shoes",
-    "category": "Running",
-    "price": 5999,
-    "brand": "RunFlex",
-    "description": "Performance running shoes with responsive cushioning and enhanced heel support.",
-    "tags": ["running shoes", "premium", "running", "sports"],
-    "use_cases": ["running", "marathon", "training"]
-  },
-  {
-    "id": "P026",
-    "name": "ActiveDry Sports T-Shirt",
-    "category": "Sportswear",
-    "price": 999,
-    "brand": "ActiveDry",
-    "description": "Quick-dry lightweight sports T-shirt designed for workouts and outdoor activities.",
-    "tags": ["t-shirt", "sports", "gym", "quick dry"],
-    "use_cases": ["gym", "running", "sports"]
-  },
-  {
-    "id": "P027",
-    "name": "ActiveDry Training Shorts",
-    "category": "Sportswear",
-    "price": 1199,
-    "brand": "ActiveDry",
-    "description": "Lightweight training shorts with breathable fabric and zippered pockets.",
-    "tags": ["shorts", "gym", "sports", "training"],
-    "use_cases": ["gym", "running", "sports"]
-  },
-  {
-    "id": "P028",
-    "name": "TrailPack 25L Backpack",
-    "category": "Travel",
-    "price": 2499,
-    "brand": "TrailPack",
-    "description": "25-liter water-resistant backpack with padded laptop compartment and multiple pockets.",
-    "tags": ["backpack", "travel", "laptop", "college"],
-    "use_cases": ["college", "travel", "office", "hiking"]
-  },
-  {
-    "id": "P029",
-    "name": "TrailPack 40L Travel Backpack",
-    "category": "Travel",
-    "price": 3999,
-    "brand": "TrailPack",
-    "description": "40-liter travel backpack with expandable storage, luggage strap and padded compartments.",
-    "tags": ["backpack", "travel", "large", "luggage"],
-    "use_cases": ["travel", "weekend trips", "business travel"]
-  },
-  {
-    "id": "P030",
-    "name": "Voyage Hard Shell Cabin Bag",
-    "category": "Luggage",
-    "price": 4999,
-    "brand": "Voyage",
-    "description": "20-inch hard-shell cabin suitcase with four spinner wheels and combination lock.",
-    "tags": ["suitcase", "luggage", "travel", "cabin"],
-    "use_cases": ["air travel", "business travel", "vacation"]
-  },
-  {
-    "id": "P031",
-    "name": "Voyage Packing Cube Set",
-    "category": "Travel Accessories",
-    "price": 799,
-    "brand": "Voyage",
-    "description": "Set of four lightweight packing cubes for organizing clothes and accessories.",
-    "tags": ["packing cubes", "travel", "organization"],
-    "use_cases": ["travel", "vacation", "business travel"]
-  },
-  {
-    "id": "P032",
-    "name": "Voyage Travel Organizer",
-    "category": "Travel Accessories",
-    "price": 699,
-    "brand": "Voyage",
-    "description": "Compact travel organizer for passports, cards, cables and other essentials.",
-    "tags": ["travel organizer", "passport", "travel", "accessories"],
-    "use_cases": ["travel", "business travel"]
-  },
-  {
-    "id": "P033",
-    "name": "UrbanFit Everyday Sneakers",
-    "category": "Footwear",
-    "price": 2999,
-    "brand": "UrbanFit",
-    "description": "Casual sneakers with cushioned insole and breathable upper for everyday wear.",
-    "tags": ["sneakers", "casual", "shoes", "fashion"],
-    "use_cases": ["college", "casual", "daily wear"]
-  },
-  {
-    "id": "P034",
-    "name": "UrbanFit Classic Hoodie",
-    "category": "Fashion",
-    "price": 1999,
-    "brand": "UrbanFit",
-    "description": "Soft cotton-blend hoodie with regular fit and kangaroo pocket.",
-    "tags": ["hoodie", "casual", "fashion", "winter"],
-    "use_cases": ["college", "casual", "travel"]
-  },
-  {
-    "id": "P035",
-    "name": "UrbanFit Slim Backpack",
-    "category": "Bags",
-    "price": 1799,
-    "brand": "UrbanFit",
-    "description": "Minimal everyday backpack with padded laptop compartment and hidden security pocket.",
-    "tags": ["backpack", "laptop", "college", "office"],
-    "use_cases": ["college", "office", "daily commute"]
-  },
-  {
-    "id": "P036",
-    "name": "HomeBrew Compact Coffee Maker",
-    "category": "Kitchen",
-    "price": 3499,
-    "brand": "HomeBrew",
-    "description": "Compact drip coffee maker with reusable filter and 600ml brewing capacity.",
-    "tags": ["coffee maker", "coffee", "kitchen", "appliance"],
-    "use_cases": ["home", "office", "coffee"]
-  },
-  {
-    "id": "P037",
-    "name": "HomeBrew Electric Kettle",
-    "category": "Kitchen",
-    "price": 1499,
-    "brand": "HomeBrew",
-    "description": "1.5-liter stainless steel electric kettle with automatic shut-off.",
-    "tags": ["kettle", "tea", "coffee", "kitchen"],
-    "use_cases": ["home", "office", "college"]
-  },
-  {
-    "id": "P038",
-    "name": "HomeBrew Coffee Grinder",
-    "category": "Kitchen",
-    "price": 2199,
-    "brand": "HomeBrew",
-    "description": "Electric coffee grinder with adjustable grind settings for different brewing methods.",
-    "tags": ["coffee grinder", "coffee", "kitchen"],
-    "use_cases": ["coffee", "home"]
-  },
-  {
-    "id": "P039",
-    "name": "StudyMate Desk Lamp",
-    "category": "Study Accessories",
-    "price": 1299,
-    "brand": "StudyMate",
-    "description": "Adjustable LED desk lamp with three brightness levels and USB charging port.",
-    "tags": ["desk lamp", "study", "led", "office"],
-    "use_cases": ["study", "college", "office"]
-  },
-  {
-    "id": "P040",
-    "name": "StudyMate Laptop Stand",
-    "category": "Desk Accessories",
-    "price": 1499,
-    "brand": "StudyMate",
-    "description": "Adjustable aluminum laptop stand designed to improve screen height and desk ergonomics.",
-    "tags": ["laptop stand", "desk", "ergonomic", "laptop"],
-    "use_cases": ["study", "office", "coding"]
-  },
-  {
-    "id": "P041",
-    "name": "StudyMate Notebook Set",
-    "category": "Stationery",
-    "price": 499,
-    "brand": "StudyMate",
-    "description": "Set of three hardcover ruled notebooks suitable for study and everyday notes.",
-    "tags": ["notebook", "stationery", "study", "college"],
-    "use_cases": ["study", "college", "office"]
-  },
-  {
-    "id": "P042",
-    "name": "CleanTech Laptop Cleaning Kit",
-    "category": "Computer Accessories",
-    "price": 399,
-    "brand": "CleanTech",
-    "description": "Complete laptop and screen cleaning kit with microfiber cloth, brush and cleaning solution.",
-    "tags": ["cleaning", "laptop", "screen", "maintenance"],
-    "use_cases": ["laptop", "office", "college"]
-  },
-  {
-    "id": "P043",
-    "name": "SafeGuard Surge Protector",
-    "category": "Power Accessories",
-    "price": 1299,
-    "brand": "SafeGuard",
-    "description": "Six-socket surge protector with overload protection and individual power switches.",
-    "tags": ["surge protector", "power", "electronics", "safety"],
-    "use_cases": ["office", "home", "computer setup"]
-  },
-  {
-    "id": "P044",
-    "name": "SoundMax Portable Bluetooth Speaker",
-    "category": "Speakers",
-    "price": 2499,
-    "brand": "SoundMax",
-    "description": "Compact Bluetooth speaker with 12-hour battery life and IPX5 water resistance.",
-    "tags": ["speaker", "bluetooth", "portable", "music"],
-    "use_cases": ["travel", "party", "outdoor", "music"]
-  },
-  {
-    "id": "P045",
-    "name": "PixelPro Action Camera",
-    "category": "Cameras",
-    "price": 8999,
-    "brand": "PixelPro",
-    "description": "4K action camera with electronic image stabilization and waterproof housing.",
-    "tags": ["action camera", "4k", "camera", "travel"],
-    "use_cases": ["travel", "adventure", "cycling", "vlogging"]
-  },
-  {
-    "id": "P046",
-    "name": "PixelPro 128GB MicroSD Card",
-    "category": "Storage",
-    "price": 999,
-    "brand": "PixelPro",
-    "description": "128GB high-speed microSD card suitable for action cameras and smartphones.",
-    "tags": ["memory card", "microsd", "storage", "camera"],
-    "use_cases": ["camera", "phone", "video recording"]
-  },
-  {
-    "id": "P047",
-    "name": "PixelPro Compact Tripod",
-    "category": "Camera Accessories",
-    "price": 1299,
-    "brand": "PixelPro",
-    "description": "Lightweight adjustable tripod compatible with cameras and smartphones.",
-    "tags": ["tripod", "camera", "vlogging", "photography"],
-    "use_cases": ["photography", "vlogging", "travel"]
-  },
-  {
-    "id": "P048",
-    "name": "PixelPro Camera Sling Bag",
-    "category": "Camera Accessories",
-    "price": 1799,
-    "brand": "PixelPro",
-    "description": "Compact padded camera sling bag with adjustable dividers and weather-resistant exterior.",
-    "tags": ["camera bag", "camera", "travel", "photography"],
-    "use_cases": ["photography", "travel", "vlogging"]
-  },
-  {
-    "id": "P049",
-    "name": "PowerCore Wireless Charging Pad",
-    "category": "Charging Accessories",
-    "price": 1199,
-    "brand": "PowerCore",
-    "description": "15W wireless charging pad compatible with supported smartphones and earbuds.",
-    "tags": ["wireless charger", "charging", "phone", "desk"],
-    "use_cases": ["office", "home", "desk"]
-  },
-  {
-    "id": "P050",
-    "name": "FlexShield Phone Case",
-    "category": "Phone Accessories",
-    "price": 699,
-    "brand": "FlexShield",
-    "description": "Shock-resistant slim phone case with raised edges for screen and camera protection.",
-    "tags": ["phone case", "protection", "smartphone"],
-    "use_cases": ["daily use", "travel", "college"]
-  }
-]
+{
+  "catalog_name": "NovaCart Real-Product Research Catalog",
+  "generated_for": "Razorpay AI Buildathon 2026 Track 1 prototype",
+  "snapshot_date": "2026-09-04",
+  "important_note": "Real product models/specifications with public Indian-market price snapshots. Prices and availability can change; use price_status and source fields to avoid treating snapshots as live pricing.",
+  "products": [
+    {
+      "id": "L001",
+      "brand": "ASUS",
+      "name": "Vivobook S14 (S3407)",
+      "category": "Laptop",
+      "price_inr": 60990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i7-13620H",
+        "gpu": "Intel Graphics",
+        "ram": "16GB DDR5",
+        "storage": "512GB PCIe 4.0 SSD",
+        "display": "14-inch FHD+ IPS, 60Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "productivity"
+      ],
+      "tags": [
+        "portable",
+        "student",
+        "coding"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L002",
+      "brand": "ASUS",
+      "name": "Vivobook S16 (S3607)",
+      "category": "Laptop",
+      "price_inr": 65990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "up to Intel Core Ultra 7 (Series 2)",
+        "gpu": "Intel UHD / UMA",
+        "ram": "up to 16GB DDR5",
+        "storage": "up to 1TB PCIe 4.0 SSD",
+        "display": "16-inch FHD OLED or 144Hz IPS",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "coding",
+        "productivity",
+        "college"
+      ],
+      "tags": [
+        "large-screen",
+        "AI PC",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "stand",
+        "hub"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L003",
+      "brand": "ASUS",
+      "name": "Vivobook 16 (X1605)",
+      "category": "Laptop",
+      "price_inr": 72990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i7-13620H / i5-13420H / i5-1335U / i3-1315U (variant)",
+        "gpu": "Intel UHD / Iris Xe (variant)",
+        "ram": "configuration-dependent",
+        "storage": "512GB or 1TB SSD (variant)",
+        "display": "16-inch OLED 1920x1200, 60Hz (variant)",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "coding",
+        "study",
+        "productivity"
+      ],
+      "tags": [
+        "16-inch",
+        "OLED",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "stand"
+      ],
+      "source": {
+        "name": "ASUS India Tech Specs",
+        "url": "https://www.asus.com/in/laptops/for-home/vivobook/vivobook-16-x1605/techspec/"
+      }
+    },
+    {
+      "id": "L004",
+      "brand": "ASUS",
+      "name": "Vivobook 16 (M1607) Copilot+ PC",
+      "category": "Laptop",
+      "price_inr": 78990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen AI 7 350 (variant)",
+        "gpu": "AMD Radeon Graphics",
+        "ram": "up to 32GB DDR5",
+        "storage": "up to 1TB PCIe 4.0 SSD",
+        "display": "16-inch 16:10 FHD IPS, 60Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "AI workloads",
+        "productivity",
+        "coding"
+      ],
+      "tags": [
+        "Copilot+",
+        "AI PC",
+        "large-screen"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "hub",
+        "charger"
+      ],
+      "source": {
+        "name": "ASUS India Tech Specs",
+        "url": "https://www.asus.com/in/laptops/for-home/vivobook/asus-vivobook-16-m1607/techspec/"
+      }
+    },
+    {
+      "id": "L005",
+      "brand": "ASUS",
+      "name": "Vivobook 14 (M1407) Copilot+ PC",
+      "category": "Laptop",
+      "price_inr": 75990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "up to AMD Ryzen AI 7 350",
+        "gpu": "AMD Radeon Graphics",
+        "ram": "up to 32GB DDR5",
+        "storage": "up to 1TB PCIe 4.0 SSD",
+        "display": "14-inch 16:10 FHD IPS, 60Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "college",
+        "coding",
+        "productivity"
+      ],
+      "tags": [
+        "portable",
+        "AI PC",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L006",
+      "brand": "ASUS",
+      "name": "Vivobook S14 (S3407QA) Copilot+ PC",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Snapdragon X",
+        "gpu": "Qualcomm Adreno",
+        "ram": null,
+        "storage": null,
+        "display": "14-inch FHD OLED NanoEdge",
+        "battery": "70Wh",
+        "weight": "1.39kg",
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "portable productivity",
+        "college"
+      ],
+      "tags": [
+        "OLED",
+        "Snapdragon",
+        "lightweight"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L007",
+      "brand": "ASUS",
+      "name": "Vivobook S16 (S3607QA) Copilot+ PC",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Snapdragon X",
+        "gpu": "Qualcomm Adreno",
+        "ram": null,
+        "storage": null,
+        "display": "16-inch FHD OLED NanoEdge",
+        "battery": "70Wh",
+        "weight": "1.67kg",
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "productivity",
+        "college",
+        "media"
+      ],
+      "tags": [
+        "OLED",
+        "Snapdragon",
+        "large-screen"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L008",
+      "brand": "ASUS",
+      "name": "Vivobook 15 (X1504)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core 5 120U",
+        "gpu": "Intel Graphics",
+        "ram": null,
+        "storage": "512GB PCIe 4.0 SSD",
+        "display": "15.6-inch FHD, 60Hz, 250 nits",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "college",
+        "office",
+        "coding"
+      ],
+      "tags": [
+        "student",
+        "productivity"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "stand"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L009",
+      "brand": "ASUS",
+      "name": "Vivobook Go 15 (E1504F)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD processor (variant)",
+        "gpu": "AMD Radeon Graphics",
+        "ram": null,
+        "storage": "512GB PCIe 3.0 SSD",
+        "display": "15.6-inch FHD, 60Hz, 250 nits",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "college",
+        "basic coding",
+        "study"
+      ],
+      "tags": [
+        "budget",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "headset"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L010",
+      "brand": "ASUS",
+      "name": "Gaming V16 (V3607)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "up to Intel Core 7",
+        "gpu": "up to NVIDIA GeForce RTX 4050 Laptop GPU",
+        "ram": "up to 32GB DDR5",
+        "storage": "up to 1TB SSD",
+        "display": "16-inch FHD, 144Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "gaming",
+        "AI development",
+        "creative work"
+      ],
+      "tags": [
+        "RTX",
+        "gaming",
+        "performance"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "gaming_keyboard",
+        "headset"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L011",
+      "brand": "ASUS",
+      "name": "TUF Gaming A16 (2025)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen 9 8940HX",
+        "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+        "ram": null,
+        "storage": "1TB PCIe 4.0 SSD",
+        "display": "16-inch 2.5K 2560x1600, 165Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "gaming",
+        "ML",
+        "rendering"
+      ],
+      "tags": [
+        "RTX 5070",
+        "high-performance",
+        "creator"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "cooling_pad",
+        "headset"
+      ],
+      "source": {
+        "name": "ASUS Highlight Product",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L012",
+      "brand": "ASUS",
+      "name": "Zenbook S16 (UM5606)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen AI 9 465",
+        "gpu": "AMD Radeon Graphics",
+        "ram": null,
+        "storage": "1TB PCIe 4.0 SSD",
+        "display": "16-inch 3K 2880x1800 OLED, 120Hz, touchscreen",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "premium productivity",
+        "coding",
+        "content creation"
+      ],
+      "tags": [
+        "OLED",
+        "premium",
+        "AI"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "hub"
+      ],
+      "source": {
+        "name": "ASUS Highlight Product",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L013",
+      "brand": "ASUS",
+      "name": "TUF Gaming F16 (FX607)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core 5 210H",
+        "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+        "ram": null,
+        "storage": "512GB PCIe 4.0 SSD",
+        "display": "16-inch FHD+ 1920x1200, 144Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "ML"
+      ],
+      "tags": [
+        "RTX 4050",
+        "gaming"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L014",
+      "brand": "ASUS",
+      "name": "TUF Gaming A15",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen 7 8845HS",
+        "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+        "ram": null,
+        "storage": "512GB PCIe 4.0 SSD",
+        "display": "15.6-inch FHD, 144Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "ML"
+      ],
+      "tags": [
+        "RTX 3050",
+        "gaming"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L015",
+      "brand": "ASUS",
+      "name": "ROG Strix G16 (2025)",
+      "category": "Laptop",
+      "price_inr": null,
+      "currency": "INR",
+      "price_status": "verified_specs_price_not_exposed",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen 9 8940HX",
+        "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+        "ram": null,
+        "storage": "1TB PCIe 4.0 SSD",
+        "display": "16-inch FHD+ 1920x1200, 165Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "gaming",
+        "AI/ML",
+        "rendering"
+      ],
+      "tags": [
+        "high-performance",
+        "gaming"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "gaming_keyboard",
+        "headset"
+      ],
+      "source": {
+        "name": "ASUS India",
+        "url": "https://www.asus.com/in/store/laptops/for-home/"
+      }
+    },
+    {
+      "id": "L016",
+      "brand": "HP",
+      "name": "OmniBook 3 14-ht0218TU",
+      "category": "Laptop",
+      "price_inr": 80417,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core 3 304",
+        "gpu": "Intel Graphics",
+        "ram": "8GB",
+        "storage": "512GB SSD",
+        "display": "14-inch 1920x1200",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "college",
+        "basic coding",
+        "office"
+      ],
+      "tags": [
+        "student",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "headset"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L017",
+      "brand": "HP",
+      "name": "OmniBook 3 16-bu0273TU",
+      "category": "Laptop",
+      "price_inr": 171399,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 9 285H",
+        "gpu": "Intel Graphics",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "16-inch 1920x1200",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "coding",
+        "productivity",
+        "creator work"
+      ],
+      "tags": [
+        "Ultra 9",
+        "large-screen"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "dock",
+        "monitor"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L018",
+      "brand": "HP",
+      "name": "OMEN 16 16-am0201TX",
+      "category": "Laptop",
+      "price_inr": 239999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i9-14900HX",
+        "gpu": "NVIDIA GeForce RTX 5070 8GB",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "16-inch WQXGA 2560x1600, 240Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "gaming",
+        "ML",
+        "rendering"
+      ],
+      "tags": [
+        "RTX 5070",
+        "high-performance"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "gaming_keyboard",
+        "headset"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L019",
+      "brand": "HP",
+      "name": "Victus 15-fb3096AX",
+      "category": "Laptop",
+      "price_inr": 139999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen 7 260",
+        "gpu": "NVIDIA GeForce RTX 5050 8GB",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "15.6-inch FHD, 144Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "ML"
+      ],
+      "tags": [
+        "RTX 5050",
+        "gaming"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L020",
+      "brand": "HP",
+      "name": "Victus 15-fa2689TX",
+      "category": "Laptop",
+      "price_inr": 149999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core 7 240H",
+        "gpu": "NVIDIA GeForce RTX 5050 8GB",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "15.6-inch FHD, 144Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "ML"
+      ],
+      "tags": [
+        "RTX 5050",
+        "gaming"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L021",
+      "brand": "HP",
+      "name": "Victus 15-fa2688TX",
+      "category": "Laptop",
+      "price_inr": 129999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i5-14500HX",
+        "gpu": "NVIDIA GeForce RTX 3050 6GB",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "15.6-inch FHD, 144Hz",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "ML"
+      ],
+      "tags": [
+        "RTX 3050",
+        "value-performance"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L022",
+      "brand": "HP",
+      "name": "OmniBook 5 14-hh0082TU",
+      "category": "Laptop",
+      "price_inr": 131999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 5 322",
+        "gpu": "Intel Graphics",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "14-inch 1920x1200",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "coding",
+        "productivity",
+        "college"
+      ],
+      "tags": [
+        "AI PC",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "dock"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L023",
+      "brand": "HP",
+      "name": "OmniBook 3 16-by0091AU",
+      "category": "Laptop",
+      "price_inr": 85999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "AMD Ryzen 5 40",
+        "gpu": "AMD Radeon 610M",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "16-inch 1920x1200",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "college",
+        "coding",
+        "office"
+      ],
+      "tags": [
+        "large-screen",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "stand"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L024",
+      "brand": "HP",
+      "name": "OmniBook 3 16-bu0287TU",
+      "category": "Laptop",
+      "price_inr": 124999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 7 255H",
+        "gpu": "Intel Arc 140T GPU",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "16-inch 1920x1200",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "coding",
+        "development",
+        "productivity"
+      ],
+      "tags": [
+        "AI PC",
+        "Arc",
+        "large-screen"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "dock",
+        "monitor"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L025",
+      "brand": "HP",
+      "name": "OmniBook 3 16-bu0286TU",
+      "category": "Laptop",
+      "price_inr": 115999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 5 225H",
+        "gpu": "Intel Arc 130T GPU",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "16-inch 1920x1200",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11 Home Single Language"
+      },
+      "use_cases": [
+        "coding",
+        "development",
+        "productivity"
+      ],
+      "tags": [
+        "AI PC",
+        "Arc",
+        "large-screen"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "dock",
+        "monitor"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/laptops"
+      }
+    },
+    {
+      "id": "L026",
+      "brand": "Acer",
+      "name": "Swift Neo SFN14-55 (Core Ultra 7)",
+      "category": "Laptop",
+      "price_inr": 89990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 7 155H",
+        "gpu": "Intel Arc Graphics",
+        "ram": "16GB LPDDR5",
+        "storage": "512GB PCIe NVMe SSD",
+        "display": "14-inch WUXGA 1920x1200 IPS, 300 nits",
+        "battery": null,
+        "weight": "1.25kg",
+        "os": "Windows 11 Home + MS Office"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "portable productivity"
+      ],
+      "tags": [
+        "lightweight",
+        "Arc",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "Acer India Official Store",
+        "url": "https://store.acer.com/en-in/laptops/swift"
+      }
+    },
+    {
+      "id": "L027",
+      "brand": "Acer",
+      "name": "Swift Pro SFP14-55 (Core Ultra 5, 8GB)",
+      "category": "Laptop",
+      "price_inr": 74999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 5 125H",
+        "gpu": "Intel Arc Graphics",
+        "ram": "8GB LPDDR5",
+        "storage": "512GB PCIe NVMe SSD",
+        "display": "14-inch WUXGA 1920x1200 IPS, 300 nits",
+        "battery": null,
+        "weight": "1.2kg",
+        "os": "Windows 11 Home + MS Office"
+      },
+      "use_cases": [
+        "college",
+        "coding",
+        "portability"
+      ],
+      "tags": [
+        "lightweight",
+        "budget",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "Acer India Official Store",
+        "url": "https://store.acer.com/en-in/laptops/swift"
+      }
+    },
+    {
+      "id": "L028",
+      "brand": "Acer",
+      "name": "Swift Pro SFP14-55 (Core Ultra 5, 16GB)",
+      "category": "Laptop",
+      "price_inr": 79999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 5 125H",
+        "gpu": "Intel Arc Graphics",
+        "ram": "16GB LPDDR5",
+        "storage": "512GB PCIe NVMe SSD",
+        "display": "14-inch WUXGA 1920x1200 IPS",
+        "battery": null,
+        "weight": "1.2kg",
+        "os": "Windows 11 Home + MS Office"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "productivity"
+      ],
+      "tags": [
+        "16GB",
+        "lightweight"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "Acer India Official Store",
+        "url": "https://store.acer.com/en-in/laptops/swift"
+      }
+    },
+    {
+      "id": "L029",
+      "brand": "Acer",
+      "name": "Swift Pro SFP14-55 OLED (16GB)",
+      "category": "Laptop",
+      "price_inr": 84999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 5 125H",
+        "gpu": "Intel Arc Graphics",
+        "ram": "16GB LPDDR5",
+        "storage": "512GB PCIe NVMe SSD",
+        "display": "14-inch WUXGA OLED, 400 nits, 100% sRGB",
+        "battery": null,
+        "weight": "1.2kg",
+        "os": "Windows 11 Home + MS Office"
+      },
+      "use_cases": [
+        "coding",
+        "design",
+        "content creation"
+      ],
+      "tags": [
+        "OLED",
+        "100% sRGB",
+        "lightweight"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "hub"
+      ],
+      "source": {
+        "name": "Acer India Official Store",
+        "url": "https://store.acer.com/en-in/laptops/swift"
+      }
+    },
+    {
+      "id": "L030",
+      "brand": "Acer",
+      "name": "Swift Neo SFN14-55 (Core Ultra 5)",
+      "category": "Laptop",
+      "price_inr": 69990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra 5 125H",
+        "gpu": "Intel Arc Graphics",
+        "ram": "8GB LPDDR5",
+        "storage": "512GB PCIe NVMe SSD",
+        "display": "14-inch WUXGA 1920x1200 IPS, 300 nits",
+        "battery": null,
+        "weight": "1.25kg",
+        "os": "Windows 11 Home + MS Office"
+      },
+      "use_cases": [
+        "college",
+        "coding",
+        "portability"
+      ],
+      "tags": [
+        "student",
+        "lightweight",
+        "Arc"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "charger"
+      ],
+      "source": {
+        "name": "Acer India Official Store",
+        "url": "https://store.acer.com/en-in/laptops/swift"
+      }
+    },
+    {
+      "id": "L031",
+      "brand": "Dell",
+      "name": "Inspiron 15 3530 Core i3",
+      "category": "Laptop",
+      "price_inr": 38090,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i3",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8GB",
+        "storage": "512GB SSD",
+        "display": "15.6-inch 1920x1080",
+        "battery": null,
+        "weight": "1.62kg",
+        "os": "Windows 11"
+      },
+      "use_cases": [
+        "college",
+        "office",
+        "basic coding"
+      ],
+      "tags": [
+        "budget",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "headset"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L032",
+      "brand": "Dell",
+      "name": "Inspiron 14 5440 Core i5",
+      "category": "Laptop",
+      "price_inr": 65490,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i5-1334U",
+        "gpu": "Intel Graphics",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "display": "14-inch 2220x1080",
+        "battery": "3-cell; up to 7h listed",
+        "weight": "1.54kg",
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "productivity"
+      ],
+      "tags": [
+        "portable",
+        "16GB"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "dock"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L033",
+      "brand": "Dell",
+      "name": "Inspiron 14 5440 Core i3",
+      "category": "Laptop",
+      "price_inr": 55855,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i3-1305U",
+        "gpu": "Intel Graphics",
+        "ram": "8GB",
+        "storage": "512GB SSD",
+        "display": "14-inch",
+        "battery": null,
+        "weight": null,
+        "os": "Windows 11"
+      },
+      "use_cases": [
+        "college",
+        "basic coding"
+      ],
+      "tags": [
+        "budget",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L034",
+      "brand": "Dell",
+      "name": "Inspiron 15 3530 Core i5 16GB",
+      "category": "Laptop",
+      "price_inr": 73990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i5-1334U",
+        "gpu": "Intel Iris Xe Graphics",
+        "ram": "16GB DDR4",
+        "storage": "1TB SSD",
+        "display": "15.6-inch, 120Hz",
+        "battery": "41Wh",
+        "weight": null,
+        "os": "Windows 11 Home"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "productivity"
+      ],
+      "tags": [
+        "16GB",
+        "1TB"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "stand"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L035",
+      "brand": "Dell",
+      "name": "G15 5530 Core i5 RTX 3050 16GB",
+      "category": "Laptop",
+      "price_inr": 106900,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i5-13450HX",
+        "gpu": "NVIDIA GeForce RTX 3050 6GB",
+        "ram": "16GB DDR5",
+        "storage": "1TB SSD",
+        "display": "15.6-inch, 120Hz",
+        "battery": "56Wh",
+        "weight": null,
+        "os": "Windows 11"
+      },
+      "use_cases": [
+        "gaming",
+        "ML",
+        "rendering"
+      ],
+      "tags": [
+        "RTX",
+        "gaming",
+        "performance"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L036",
+      "brand": "Lenovo",
+      "name": "IdeaPad Slim 5 14 (Core i5, 16GB, 1TB)",
+      "category": "Laptop",
+      "price_inr": 68749,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i5 13th Gen (listed variant)",
+        "gpu": "Intel Graphics",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "display": "14-inch 2240x1400-class",
+        "battery": null,
+        "weight": "1.59kg",
+        "os": "Windows 11"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "productivity"
+      ],
+      "tags": [
+        "portable",
+        "16GB",
+        "1TB"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "stand"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L037",
+      "brand": "Lenovo",
+      "name": "IdeaPad Slim 3 81WB015JIN",
+      "category": "Laptop",
+      "price_inr": 39990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core i3 10th Gen",
+        "gpu": "Intel Graphics",
+        "ram": "8GB",
+        "storage": "1TB HDD",
+        "display": "15.6-inch 1920x1080",
+        "battery": null,
+        "weight": "1.70kg",
+        "os": "Windows 10"
+      },
+      "use_cases": [
+        "basic study",
+        "office"
+      ],
+      "tags": [
+        "budget",
+        "legacy"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve"
+      ],
+      "source": {
+        "name": "Gadgets 360",
+        "url": "https://www.gadgets360.com/laptops"
+      }
+    },
+    {
+      "id": "L038",
+      "brand": "Lenovo",
+      "name": "LOQ 15IRH8",
+      "category": "Laptop",
+      "price_inr": 60490,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "13th Gen Intel Core (variant)",
+        "gpu": "NVIDIA GeForce RTX 40 Series (variant)",
+        "ram": null,
+        "storage": null,
+        "display": "15-inch WQHD",
+        "battery": null,
+        "weight": null,
+        "os": "Windows"
+      },
+      "use_cases": [
+        "gaming",
+        "ML",
+        "development"
+      ],
+      "tags": [
+        "gaming",
+        "RTX",
+        "performance"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_mouse",
+        "headset",
+        "cooling_pad"
+      ],
+      "source": {
+        "name": "Lenovo Store India",
+        "url": "https://store.lenovo.com/in/en/lenovo-loq-loq-15irh8-82xv00f4in-1157-1.html"
+      }
+    },
+    {
+      "id": "L039",
+      "brand": "Apple",
+      "name": "MacBook Neo",
+      "category": "Laptop",
+      "price_inr": 79900,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Apple A18 Pro",
+        "gpu": "Integrated Apple GPU",
+        "ram": "8GB (listed base)",
+        "storage": "256GB SSD (listed base)",
+        "display": "MacBook Neo display; configuration-dependent",
+        "battery": "all-day class",
+        "weight": null,
+        "os": "macOS"
+      },
+      "use_cases": [
+        "college",
+        "coding",
+        "productivity"
+      ],
+      "tags": [
+        "macOS",
+        "portable",
+        "student"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "hub",
+        "mouse",
+        "sleeve"
+      ],
+      "source": {
+        "name": "Apple India",
+        "url": "https://www.apple.com/in/shop/buy-mac"
+      }
+    },
+    {
+      "id": "L040",
+      "brand": "Apple",
+      "name": "MacBook Air",
+      "category": "Laptop",
+      "price_inr": 149900,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Apple silicon (current Air generation; configuration-dependent)",
+        "gpu": "Integrated Apple GPU",
+        "ram": "configuration-dependent",
+        "storage": "configuration-dependent",
+        "display": "MacBook Air display",
+        "battery": "long battery life",
+        "weight": null,
+        "os": "macOS"
+      },
+      "use_cases": [
+        "coding",
+        "development",
+        "creative work"
+      ],
+      "tags": [
+        "macOS",
+        "lightweight",
+        "premium"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "hub",
+        "mouse",
+        "sleeve"
+      ],
+      "source": {
+        "name": "Apple India",
+        "url": "https://www.apple.com/in/shop/buy-mac"
+      }
+    },
+    {
+      "id": "L041",
+      "brand": "Apple",
+      "name": "MacBook Pro",
+      "category": "Laptop",
+      "price_inr": 239900,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Apple silicon (current Pro generation; configuration-dependent)",
+        "gpu": "Integrated Apple GPU",
+        "ram": "configuration-dependent",
+        "storage": "configuration-dependent",
+        "display": "MacBook Pro display",
+        "battery": "long battery life",
+        "weight": null,
+        "os": "macOS"
+      },
+      "use_cases": [
+        "ML",
+        "development",
+        "content creation"
+      ],
+      "tags": [
+        "high-performance",
+        "pro",
+        "macOS"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "hub",
+        "mouse",
+        "sleeve"
+      ],
+      "source": {
+        "name": "Apple India",
+        "url": "https://www.apple.com/in/shop/buy-mac"
+      }
+    },
+    {
+      "id": "L042",
+      "brand": "Samsung",
+      "name": "Galaxy Book6 series",
+      "category": "Laptop",
+      "price_inr": 127990,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "processor": "Intel Core Ultra Series 3",
+        "gpu": "Integrated Intel graphics (variant)",
+        "ram": "configuration-dependent",
+        "storage": "configuration-dependent",
+        "display": "14/16-inch series variants",
+        "battery": "up to 30 hours claimed for series",
+        "weight": null,
+        "os": "Windows"
+      },
+      "use_cases": [
+        "productivity",
+        "college",
+        "coding"
+      ],
+      "tags": [
+        "Galaxy ecosystem",
+        "AI",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "mouse",
+        "sleeve",
+        "hub"
+      ],
+      "source": {
+        "name": "Manufacturer / retailer listing",
+        "url": "https://news.samsung.com/in/samsung-launches-galaxy-book6-in-india-with-cutting-edge-performance-and-ai-driven-productivity"
+      }
+    },
+    {
+      "id": "A001",
+      "brand": "HP",
+      "name": "400 Quiet Wireless Mouse",
+      "category": "Mouse",
+      "price_inr": 2149,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "2.4GHz wireless",
+        "battery": "up to 24 months",
+        "design": "ambidextrous, soft-silicone",
+        "dpi": null
+      },
+      "use_cases": [
+        "office",
+        "coding",
+        "college"
+      ],
+      "tags": [
+        "quiet",
+        "wireless",
+        "long-battery"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards&specialoffers=deals"
+      }
+    },
+    {
+      "id": "A002",
+      "brand": "HP",
+      "name": "230 Slim Wireless Mouse",
+      "category": "Mouse",
+      "price_inr": 869,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "2.4GHz wireless",
+        "battery": "long-lasting (manufacturer description)",
+        "design": "slim, quiet",
+        "dpi": null
+      },
+      "use_cases": [
+        "office",
+        "college",
+        "coding"
+      ],
+      "tags": [
+        "wireless",
+        "slim",
+        "quiet"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards+combos+mice-keyboards+workspace-accessories"
+      }
+    },
+    {
+      "id": "A003",
+      "brand": "HP",
+      "name": "240 Pike Silver Bluetooth Mouse",
+      "category": "Mouse",
+      "price_inr": 1178,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Bluetooth",
+        "battery": "not stated in listing",
+        "design": "compact, wireless",
+        "dpi": null
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "Bluetooth",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards+combos+mice-keyboards+workspace-accessories"
+      }
+    },
+    {
+      "id": "A004",
+      "brand": "HP",
+      "name": "430 Multi-Device Wireless Mouse",
+      "category": "Mouse",
+      "price_inr": 2229,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "2.4GHz wireless / multi-device",
+        "battery": "up to 24 months",
+        "design": "ergonomic, programmable buttons",
+        "dpi": "customizable"
+      },
+      "use_cases": [
+        "coding",
+        "productivity"
+      ],
+      "tags": [
+        "multi-device",
+        "ergonomic",
+        "programmable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards+combos+mice-keyboards+workspace-accessories"
+      }
+    },
+    {
+      "id": "A005",
+      "brand": "HP",
+      "name": "M370 Wired Gaming Mouse",
+      "category": "Mouse",
+      "price_inr": 699,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wired USB",
+        "sensor": "gaming optical sensor",
+        "dpi": "not stated in listing",
+        "lighting": "gaming design"
+      },
+      "use_cases": [
+        "gaming",
+        "coding"
+      ],
+      "tags": [
+        "wired",
+        "gaming"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A006",
+      "brand": "ASUS",
+      "name": "Wireless Mouse MD102",
+      "category": "Mouse",
+      "price_inr": 1199,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "dual-mode",
+        "battery": "not stated",
+        "dpi": "customizable",
+        "design": "durable build"
+      },
+      "use_cases": [
+        "office",
+        "college",
+        "coding"
+      ],
+      "tags": [
+        "dual-mode",
+        "affordable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A007",
+      "brand": "ASUS",
+      "name": "SmartO Mouse MD200 Silent Plus",
+      "category": "Mouse",
+      "price_inr": 2399,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "dual-mode",
+        "battery": "power-saving",
+        "weight": "85g",
+        "tracking": "works on glass",
+        "clicks": "silent"
+      },
+      "use_cases": [
+        "office",
+        "coding",
+        "college"
+      ],
+      "tags": [
+        "silent",
+        "dual-mode",
+        "premium"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A008",
+      "brand": "ASUS",
+      "name": "SmartO Mouse MD200",
+      "category": "Mouse",
+      "price_inr": 2399,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "dual-mode",
+        "battery": "power-saving",
+        "weight": "85g",
+        "design": "ergonomic"
+      },
+      "use_cases": [
+        "office",
+        "coding"
+      ],
+      "tags": [
+        "dual-mode",
+        "ergonomic"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A009",
+      "brand": "ASUS",
+      "name": "Marshmallow Mouse MD100 Lite",
+      "category": "Mouse",
+      "price_inr": 1299,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "battery": "up to 1 year on AA",
+        "dpi": "3 levels",
+        "switches": "10-million-click",
+        "feet": "100% PTFE"
+      },
+      "use_cases": [
+        "college",
+        "office"
+      ],
+      "tags": [
+        "portable",
+        "battery",
+        "compact"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A010",
+      "brand": "ASUS",
+      "name": "Fragrance Mouse MD101",
+      "category": "Mouse",
+      "price_inr": 1999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "battery": "up to 12 months on AA",
+        "dpi": "800/1000/1600",
+        "switches": "10-million-click",
+        "features": "refillable fragrance compartment"
+      },
+      "use_cases": [
+        "college",
+        "office"
+      ],
+      "tags": [
+        "unique",
+        "ergonomic",
+        "battery"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A011",
+      "brand": "ASUS",
+      "name": "Marshmallow Combo CW200",
+      "category": "Keyboard + Mouse",
+      "price_inr": 4199,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "compatibility": "Windows, ChromeOS, macOS, iOS, iPadOS",
+        "design": "compact, ultrathin",
+        "components": "keyboard + mouse"
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "compact",
+        "multi-platform"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A012",
+      "brand": "HP",
+      "name": "KM160 Wired Mouse and Keyboard Combo",
+      "category": "Keyboard + Mouse",
+      "price_inr": 864,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wired USB",
+        "components": "keyboard + mouse",
+        "use": "productivity"
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "budget",
+        "wired"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards-combos"
+      }
+    },
+    {
+      "id": "A013",
+      "brand": "HP",
+      "name": "230 Wireless Mouse and Keyboard Combo",
+      "category": "Keyboard + Mouse",
+      "price_inr": 2295,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "design": "quiet, slim",
+        "battery": "long-lasting",
+        "components": "keyboard + mouse"
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "wireless",
+        "quiet"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards-combos"
+      }
+    },
+    {
+      "id": "A014",
+      "brand": "HP",
+      "name": "110 Wired Mouse and Keyboard",
+      "category": "Keyboard + Mouse",
+      "price_inr": 745,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wired",
+        "mouse_dpi": "1600 DPI",
+        "features": "Copilot key",
+        "country_of_origin": "India"
+      },
+      "use_cases": [
+        "office",
+        "study"
+      ],
+      "tags": [
+        "budget",
+        "wired"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=mice-keyboards-combos"
+      }
+    },
+    {
+      "id": "A015",
+      "brand": "HP",
+      "name": "K290 Wireless Keyboard",
+      "category": "Keyboard",
+      "price_inr": 906,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "layout": "full-size",
+        "use": "productivity"
+      },
+      "use_cases": [
+        "office",
+        "coding",
+        "college"
+      ],
+      "tags": [
+        "wireless",
+        "budget"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A016",
+      "brand": "HP",
+      "name": "K120 Wired Keyboard",
+      "category": "Keyboard",
+      "price_inr": 639,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wired USB",
+        "layout": "full-size",
+        "use": "productivity"
+      },
+      "use_cases": [
+        "office",
+        "coding",
+        "college"
+      ],
+      "tags": [
+        "wired",
+        "budget"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A017",
+      "brand": "HP",
+      "name": "K280 Gaming Keyboard",
+      "category": "Keyboard",
+      "price_inr": 749,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wired",
+        "type": "gaming keyboard",
+        "lighting": "gaming design"
+      },
+      "use_cases": [
+        "gaming",
+        "coding"
+      ],
+      "tags": [
+        "gaming",
+        "budget"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A018",
+      "brand": "HP",
+      "name": "H400 Wireless Headset",
+      "category": "Headset",
+      "price_inr": 1899,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "color": "black",
+        "microphone": "integrated",
+        "use": "calls, media"
+      },
+      "use_cases": [
+        "online classes",
+        "calls",
+        "gaming",
+        "office"
+      ],
+      "tags": [
+        "wireless",
+        "headset"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=audio-video-multimedia"
+      }
+    },
+    {
+      "id": "A019",
+      "brand": "HP",
+      "name": "H320C Wired USB-C Headset",
+      "category": "Headset",
+      "price_inr": 1495,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "USB-C wired",
+        "microphone": "integrated",
+        "use": "calls, study"
+      },
+      "use_cases": [
+        "online classes",
+        "calls",
+        "college"
+      ],
+      "tags": [
+        "USB-C",
+        "wired"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=audio-video-multimedia"
+      }
+    },
+    {
+      "id": "A020",
+      "brand": "HP",
+      "name": "v212w 16GB USB 2.0 Flash Drive",
+      "category": "USB Drive",
+      "price_inr": 839,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "capacity": "16GB",
+        "interface": "USB 2.0",
+        "form_factor": "flash drive"
+      },
+      "use_cases": [
+        "college",
+        "backup",
+        "file transfer"
+      ],
+      "tags": [
+        "portable",
+        "storage"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A021",
+      "brand": "HP",
+      "name": "762w 128GB USB 3.2 Flash Drive",
+      "category": "USB Drive",
+      "price_inr": 2399,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "capacity": "128GB",
+        "interface": "USB 3.2",
+        "form_factor": "flash drive"
+      },
+      "use_cases": [
+        "backup",
+        "college",
+        "file transfer"
+      ],
+      "tags": [
+        "128GB",
+        "fast transfer"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A022",
+      "brand": "HP",
+      "name": "796w 64GB USB 3.2 Flash Drive",
+      "category": "USB Drive",
+      "price_inr": 1299,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "capacity": "64GB",
+        "interface": "USB 3.2",
+        "form_factor": "flash drive"
+      },
+      "use_cases": [
+        "backup",
+        "college"
+      ],
+      "tags": [
+        "64GB",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP Store India",
+        "url": "https://www.hp.com/in-en/shop/listings/accessories?prodtype=cables-components"
+      }
+    },
+    {
+      "id": "A023",
+      "brand": "ASUS",
+      "name": "65W USB-C GaN Charger",
+      "category": "Charger",
+      "price_inr": 2499,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "power": "65W",
+        "technology": "GaN",
+        "connector": "USB-C",
+        "design": "ultra-compact"
+      },
+      "use_cases": [
+        "travel",
+        "college",
+        "charging"
+      ],
+      "tags": [
+        "65W",
+        "GaN",
+        "compact"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A024",
+      "brand": "ASUS",
+      "name": "Marshmallow Keyboard KW100",
+      "category": "Keyboard",
+      "price_inr": 2699,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "devices": "up to 3 devices",
+        "compatibility": "Windows, ChromeOS, iOS, macOS, iPadOS"
+      },
+      "use_cases": [
+        "coding",
+        "office",
+        "college"
+      ],
+      "tags": [
+        "multi-device",
+        "compact"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A025",
+      "brand": "ASUS",
+      "name": "CW100 Keyboard & Mouse Combo",
+      "category": "Keyboard + Mouse",
+      "price_inr": 999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "components": "keyboard + mouse",
+        "compatibility": "laptops and desktops"
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "budget",
+        "combo"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A026",
+      "brand": "ASUS",
+      "name": "Stylus Pen 2.0 SA203H",
+      "category": "Stylus",
+      "price_inr": 2999,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "type": "active stylus",
+        "compatibility": "selected ASUS touchscreen products",
+        "use": "note taking, drawing"
+      },
+      "use_cases": [
+        "study",
+        "note-taking",
+        "design"
+      ],
+      "tags": [
+        "stylus",
+        "touchscreen"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "2-in-1_laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A027",
+      "brand": "ASUS",
+      "name": "MW203 Mouse",
+      "category": "Mouse",
+      "price_inr": 499,
+      "currency": "INR",
+      "price_status": "verified_current",
+      "price_checked_at": "2026-09-04",
+      "availability": "in_stock",
+      "sku": null,
+      "specifications": {
+        "connectivity": "wireless",
+        "design": "portable",
+        "use": "office"
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "budget",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS Store India",
+        "url": "https://www.asus.com/in/store"
+      }
+    },
+    {
+      "id": "A028",
+      "brand": "Logitech",
+      "name": "MX Master 3S",
+      "category": "Mouse",
+      "price_inr": 8995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Bluetooth / Logi Bolt",
+        "sensor": "8000 DPI",
+        "buttons": "7",
+        "battery": "up to 70 days",
+        "devices": "up to 3"
+      },
+      "use_cases": [
+        "coding",
+        "productivity",
+        "creator work"
+      ],
+      "tags": [
+        "premium",
+        "ergonomic",
+        "multi-device"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A029",
+      "brand": "Logitech",
+      "name": "MX Anywhere 3S",
+      "category": "Mouse",
+      "price_inr": 7495,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Bluetooth / Logi Bolt",
+        "sensor": "8000 DPI",
+        "devices": "up to 3",
+        "battery": "up to 70 days",
+        "tracking": "works on almost any surface"
+      },
+      "use_cases": [
+        "coding",
+        "travel",
+        "productivity"
+      ],
+      "tags": [
+        "travel",
+        "premium",
+        "multi-device"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A030",
+      "brand": "Logitech",
+      "name": "M650 Signature",
+      "category": "Mouse",
+      "price_inr": 2995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "2.4GHz wireless / Bluetooth",
+        "sensor": "400-4000 DPI class",
+        "design": "ergonomic",
+        "battery": "up to 24 months"
+      },
+      "use_cases": [
+        "office",
+        "college",
+        "coding"
+      ],
+      "tags": [
+        "quiet",
+        "wireless",
+        "ergonomic"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A031",
+      "brand": "Logitech",
+      "name": "M185 Wireless Mouse",
+      "category": "Mouse",
+      "price_inr": 895,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "2.4GHz wireless",
+        "battery": "up to 12 months",
+        "sensor": "optical",
+        "use": "office"
+      },
+      "use_cases": [
+        "college",
+        "office"
+      ],
+      "tags": [
+        "budget",
+        "wireless"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A032",
+      "brand": "Logitech",
+      "name": "K380s Multi-Device Bluetooth Keyboard",
+      "category": "Keyboard",
+      "price_inr": 3495,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Bluetooth",
+        "devices": "up to 3",
+        "layout": "compact",
+        "battery": "long battery life"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "travel"
+      ],
+      "tags": [
+        "compact",
+        "multi-device"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A033",
+      "brand": "Logitech",
+      "name": "K480 Bluetooth Multi-Device Keyboard",
+      "category": "Keyboard",
+      "price_inr": 2995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Bluetooth",
+        "devices": "up to 3",
+        "layout": "compact",
+        "stand": "integrated device cradle"
+      },
+      "use_cases": [
+        "office",
+        "college"
+      ],
+      "tags": [
+        "multi-device",
+        "compact"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A034",
+      "brand": "Logitech",
+      "name": "K580 Slim Multi-Device Wireless Keyboard",
+      "category": "Keyboard",
+      "price_inr": 4995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "2.4GHz / Bluetooth",
+        "devices": "up to 2",
+        "layout": "slim",
+        "numpad": "full-size"
+      },
+      "use_cases": [
+        "coding",
+        "office"
+      ],
+      "tags": [
+        "slim",
+        "multi-device"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A035",
+      "brand": "Logitech",
+      "name": "G304 Lightspeed Wireless Gaming Mouse",
+      "category": "Mouse",
+      "price_inr": 2995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Lightspeed wireless",
+        "sensor": "HERO 12K class",
+        "battery": "up to 250 hours",
+        "weight": "~99g"
+      },
+      "use_cases": [
+        "gaming",
+        "coding"
+      ],
+      "tags": [
+        "gaming",
+        "wireless"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A036",
+      "brand": "Logitech",
+      "name": "G502 X Lightspeed",
+      "category": "Mouse",
+      "price_inr": 12995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Lightspeed wireless",
+        "sensor": "HERO 25K",
+        "buttons": "13 programmable",
+        "battery": "up to 140h class"
+      },
+      "use_cases": [
+        "gaming",
+        "creator work"
+      ],
+      "tags": [
+        "premium gaming",
+        "programmable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A037",
+      "brand": "Logitech",
+      "name": "G435 Lightspeed Wireless Headset",
+      "category": "Headset",
+      "price_inr": 5995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Lightspeed wireless / Bluetooth",
+        "weight": "165g",
+        "microphone": "dual beamforming mics",
+        "battery": "18h class"
+      },
+      "use_cases": [
+        "gaming",
+        "classes",
+        "calls"
+      ],
+      "tags": [
+        "lightweight",
+        "wireless"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A038",
+      "brand": "Logitech",
+      "name": "Zone Vibe 100",
+      "category": "Headset",
+      "price_inr": 8995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "connectivity": "Bluetooth",
+        "microphone": "beamforming",
+        "battery": "20h class",
+        "weight": "180g class"
+      },
+      "use_cases": [
+        "calls",
+        "college",
+        "office"
+      ],
+      "tags": [
+        "wireless",
+        "meetings"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A039",
+      "brand": "Logitech",
+      "name": "C270 HD Webcam",
+      "category": "Webcam",
+      "price_inr": 1995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "resolution": "720p",
+        "frame_rate": "30fps",
+        "microphone": "built-in mono",
+        "interface": "USB-A"
+      },
+      "use_cases": [
+        "online classes",
+        "calls",
+        "streaming"
+      ],
+      "tags": [
+        "webcam",
+        "budget"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A040",
+      "brand": "Logitech",
+      "name": "C920s HD Pro Webcam",
+      "category": "Webcam",
+      "price_inr": 7995,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "resolution": "1080p",
+        "frame_rate": "30fps",
+        "microphone": "dual stereo",
+        "privacy": "privacy shutter",
+        "interface": "USB-A"
+      },
+      "use_cases": [
+        "streaming",
+        "meetings",
+        "classes"
+      ],
+      "tags": [
+        "1080p",
+        "privacy shutter"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Logitech India (market reference)",
+        "url": "https://www.logitech.com/en-in"
+      }
+    },
+    {
+      "id": "A041",
+      "brand": "Anker",
+      "name": "Nano 65W USB-C Charger",
+      "category": "Charger",
+      "price_inr": 3499,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "power": "65W",
+        "ports": "USB-C",
+        "technology": "GaN",
+        "design": "compact"
+      },
+      "use_cases": [
+        "travel",
+        "college",
+        "charging"
+      ],
+      "tags": [
+        "GaN",
+        "65W",
+        "compact"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Anker India (market reference)",
+        "url": "https://www.anker.com/in"
+      }
+    },
+    {
+      "id": "A042",
+      "brand": "Anker",
+      "name": "737 Power Bank (PowerCore 24K)",
+      "category": "Power Bank",
+      "price_inr": 9999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "capacity": "24,000mAh",
+        "output": "up to 140W",
+        "display": "digital display",
+        "ports": "USB-C/USB-A"
+      },
+      "use_cases": [
+        "travel",
+        "college",
+        "mobile workstation"
+      ],
+      "tags": [
+        "140W",
+        "high-capacity"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Anker India (market reference)",
+        "url": "https://www.anker.com/in"
+      }
+    },
+    {
+      "id": "A043",
+      "brand": "Anker",
+      "name": "PowerConf C200 Webcam",
+      "category": "Webcam",
+      "price_inr": 5999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "resolution": "2K",
+        "microphone": "AI noise reduction",
+        "field_of_view": "up to 95°",
+        "interface": "USB-C"
+      },
+      "use_cases": [
+        "meetings",
+        "classes",
+        "streaming"
+      ],
+      "tags": [
+        "2K webcam",
+        "AI mic"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Anker India (market reference)",
+        "url": "https://www.anker.com/in"
+      }
+    },
+    {
+      "id": "A044",
+      "brand": "Samsung",
+      "name": "27-inch Odyssey G5 Gaming Monitor",
+      "category": "Monitor",
+      "price_inr": 23999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "27-inch QHD",
+        "resolution": "2560x1440",
+        "refresh_rate": "144Hz class",
+        "panel": "VA",
+        "gaming": "FreeSync class"
+      },
+      "use_cases": [
+        "gaming",
+        "ML",
+        "coding"
+      ],
+      "tags": [
+        "QHD",
+        "high-refresh"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops",
+        "laptops"
+      ],
+      "source": {
+        "name": "Samsung India (market reference)",
+        "url": "https://www.samsung.com/in/monitors/gaming/"
+      }
+    },
+    {
+      "id": "A045",
+      "brand": "Samsung",
+      "name": "27-inch Smart Monitor M5",
+      "category": "Monitor",
+      "price_inr": 21999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "27-inch",
+        "resolution": "1920x1080",
+        "refresh_rate": "60Hz",
+        "smart_features": "Smart TV / streaming apps"
+      },
+      "use_cases": [
+        "study",
+        "office",
+        "entertainment"
+      ],
+      "tags": [
+        "smart monitor",
+        "productivity"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Samsung India (market reference)",
+        "url": "https://www.samsung.com/in/monitors/smart/"
+      }
+    },
+    {
+      "id": "A046",
+      "brand": "Dell",
+      "name": "P2425H 24-inch Monitor",
+      "category": "Monitor",
+      "price_inr": 17990,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "24-inch",
+        "resolution": "1920x1080",
+        "refresh_rate": "100Hz class",
+        "panel": "IPS",
+        "connectivity": "DisplayPort, HDMI, USB hub"
+      },
+      "use_cases": [
+        "coding",
+        "office",
+        "study"
+      ],
+      "tags": [
+        "ergonomic",
+        "IPS",
+        "productivity"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Dell India (market reference)",
+        "url": "https://www.dell.com/en-in/shop/monitors"
+      }
+    },
+    {
+      "id": "A047",
+      "brand": "Dell",
+      "name": "S2722QC 27-inch 4K Monitor",
+      "category": "Monitor",
+      "price_inr": 34990,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "27-inch",
+        "resolution": "3840x2160",
+        "refresh_rate": "60Hz",
+        "panel": "IPS",
+        "connectivity": "USB-C, HDMI",
+        "power_delivery": "65W class"
+      },
+      "use_cases": [
+        "coding",
+        "creator work",
+        "office"
+      ],
+      "tags": [
+        "4K",
+        "USB-C"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Dell India (market reference)",
+        "url": "https://www.dell.com/en-in/shop/monitors"
+      }
+    },
+    {
+      "id": "A048",
+      "brand": "HP",
+      "name": "X24ih Gaming Monitor",
+      "category": "Monitor",
+      "price_inr": 16999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "23.8-inch",
+        "resolution": "1920x1080",
+        "refresh_rate": "144Hz",
+        "panel": "IPS",
+        "response_time": "1ms class"
+      },
+      "use_cases": [
+        "gaming",
+        "coding"
+      ],
+      "tags": [
+        "high-refresh",
+        "IPS"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "HP India (market reference)",
+        "url": "https://www.hp.com/in-en/shop/monitors"
+      }
+    },
+    {
+      "id": "A049",
+      "brand": "HP",
+      "name": "E24 G5 Business Monitor",
+      "category": "Monitor",
+      "price_inr": 18999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "23.8-inch",
+        "resolution": "1920x1080",
+        "refresh_rate": "75Hz class",
+        "panel": "IPS",
+        "connectivity": "HDMI, DisplayPort, USB hub"
+      },
+      "use_cases": [
+        "coding",
+        "office",
+        "study"
+      ],
+      "tags": [
+        "business",
+        "IPS"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP India (market reference)",
+        "url": "https://www.hp.com/in-en/shop/monitors"
+      }
+    },
+    {
+      "id": "A050",
+      "brand": "Lenovo",
+      "name": "ThinkVision T24i-30",
+      "category": "Monitor",
+      "price_inr": 16990,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "23.8-inch",
+        "resolution": "1920x1080",
+        "refresh_rate": "100Hz class",
+        "panel": "IPS",
+        "connectivity": "HDMI, DisplayPort, USB hub"
+      },
+      "use_cases": [
+        "coding",
+        "office"
+      ],
+      "tags": [
+        "business",
+        "IPS",
+        "ergonomic"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Lenovo India (market reference)",
+        "url": "https://www.lenovo.com/in/en/c/monitors/"
+      }
+    },
+    {
+      "id": "A051",
+      "brand": "Lenovo",
+      "name": "Legion R27q-30",
+      "category": "Monitor",
+      "price_inr": 29990,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "27-inch",
+        "resolution": "2560x1440",
+        "refresh_rate": "180Hz",
+        "panel": "IPS",
+        "gaming": "Adaptive Sync class"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "creator work"
+      ],
+      "tags": [
+        "QHD",
+        "180Hz"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "Lenovo India (market reference)",
+        "url": "https://www.lenovo.com/in/en/c/monitors/"
+      }
+    },
+    {
+      "id": "A052",
+      "brand": "ASUS",
+      "name": "VA24EHF 24-inch Monitor",
+      "category": "Monitor",
+      "price_inr": 10990,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "23.8-inch",
+        "resolution": "1920x1080",
+        "refresh_rate": "100Hz class",
+        "panel": "IPS",
+        "response_time": "1ms class"
+      },
+      "use_cases": [
+        "coding",
+        "study",
+        "office"
+      ],
+      "tags": [
+        "IPS",
+        "budget"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "ASUS India (market reference)",
+        "url": "https://www.asus.com/in/displays-desktops/monitors/"
+      }
+    },
+    {
+      "id": "A053",
+      "brand": "ASUS",
+      "name": "TUF Gaming VG27AQ3A",
+      "category": "Monitor",
+      "price_inr": 26990,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "display": "27-inch",
+        "resolution": "2560x1440",
+        "refresh_rate": "180Hz",
+        "panel": "Fast IPS",
+        "response_time": "1ms class"
+      },
+      "use_cases": [
+        "gaming",
+        "coding",
+        "creator work"
+      ],
+      "tags": [
+        "QHD",
+        "180Hz",
+        "IPS"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "gaming_laptops"
+      ],
+      "source": {
+        "name": "ASUS India (market reference)",
+        "url": "https://www.asus.com/in/displays-desktops/monitors/"
+      }
+    },
+    {
+      "id": "A054",
+      "brand": "HP",
+      "name": "USB-C Travel Hub G3",
+      "category": "USB-C Hub",
+      "price_inr": 3999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "ports": "USB-C, USB-A, HDMI, DisplayPort",
+        "purpose": "multi-port expansion",
+        "compatibility": "USB-C laptops"
+      },
+      "use_cases": [
+        "travel",
+        "college",
+        "productivity"
+      ],
+      "tags": [
+        "USB-C",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP India (market reference)",
+        "url": "https://www.hp.com/in-en/shop/accessories"
+      }
+    },
+    {
+      "id": "A055",
+      "brand": "Anker",
+      "name": "7-in-1 USB-C Hub",
+      "category": "USB-C Hub",
+      "price_inr": 3499,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "ports": "USB-C PD, HDMI, USB-A, SD/microSD (variant)",
+        "power_delivery": "100W class",
+        "compatibility": "USB-C laptops"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "travel"
+      ],
+      "tags": [
+        "7-in-1",
+        "USB-C"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Anker India (market reference)",
+        "url": "https://www.anker.com/in"
+      }
+    },
+    {
+      "id": "A056",
+      "brand": "Belkin",
+      "name": "7-in-1 USB-C Multimedia Hub",
+      "category": "USB-C Hub",
+      "price_inr": 4999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "ports": "USB-C, HDMI, USB-A, SD/microSD (variant)",
+        "compatibility": "USB-C laptops",
+        "use": "display + storage expansion"
+      },
+      "use_cases": [
+        "coding",
+        "college",
+        "travel"
+      ],
+      "tags": [
+        "USB-C",
+        "multimedia"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Belkin India (market reference)",
+        "url": "https://www.belkin.com/in/"
+      }
+    },
+    {
+      "id": "A057",
+      "brand": "Targus",
+      "name": "15-16 inch Laptop Sleeve",
+      "category": "Laptop Sleeve",
+      "price_inr": 1499,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "size": "15-16 inch class",
+        "material": "padded fabric",
+        "features": "protective sleeve"
+      },
+      "use_cases": [
+        "college",
+        "travel"
+      ],
+      "tags": [
+        "protection",
+        "portable"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Targus India (market reference)",
+        "url": "https://www.targus.com/in"
+      }
+    },
+    {
+      "id": "A058",
+      "brand": "Lenovo",
+      "name": "15.6-inch Laptop Everyday Backpack",
+      "category": "Backpack",
+      "price_inr": 2499,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "size": "up to 15.6-inch class",
+        "features": "laptop compartment, everyday carry",
+        "material": "fabric"
+      },
+      "use_cases": [
+        "college",
+        "commute",
+        "travel"
+      ],
+      "tags": [
+        "backpack",
+        "laptop protection"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "Lenovo India (market reference)",
+        "url": "https://www.lenovo.com/in/en/"
+      }
+    },
+    {
+      "id": "A059",
+      "brand": "HP",
+      "name": "Essential 15.6-inch Laptop Backpack",
+      "category": "Backpack",
+      "price_inr": 1999,
+      "currency": "INR",
+      "price_status": "market_snapshot",
+      "price_checked_at": "2026-09-04",
+      "availability": "unknown",
+      "sku": null,
+      "specifications": {
+        "size": "15.6-inch",
+        "features": "padded laptop compartment",
+        "material": "fabric"
+      },
+      "use_cases": [
+        "college",
+        "commute"
+      ],
+      "tags": [
+        "backpack",
+        "protection"
+      ],
+      "compatible_with": [],
+      "complements": [
+        "laptops"
+      ],
+      "source": {
+        "name": "HP India (market reference)",
+        "url": "https://www.hp.com/in-en/shop/accessories"
+      }
+    }
+  ]
+}
