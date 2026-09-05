@@ -26,6 +26,7 @@ function App() {
   const [audit, setAudit] = useState(null)
   const [auditLoading, setAuditLoading] = useState(false)
   const [quote, setQuote] = useState(null)
+  const [submittedBuyerGoal, setSubmittedBuyerGoal] = useState(null)
   const [buyerLoading, setBuyerLoading] = useState(false)
   const [toast, setToast] = useState(null)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -104,6 +105,7 @@ function App() {
   }
 
   const requestQuote = async (goal) => {
+    setSubmittedBuyerGoal(goal)
     setBuyerLoading(true)
     try { setQuote(await api.aiBuyerQuote(goal)) } catch (error) { notify(error.message, 'error') } finally { setBuyerLoading(false) }
   }
@@ -127,7 +129,7 @@ function App() {
 
     {view === 'shop' && <CustomerView chat={handleChat} loading={chatLoading} recommendations={recommendations} response={response} cart={cart} budget={budget} onAdd={addProduct} />}
     {view === 'merchant' && <main className="merchant-shell"><aside className="merchant-nav"><span>Merchant workspace</span><button className={merchantView === 'dashboard' ? 'active' : ''} onClick={() => setMerchantView('dashboard')}><BarChart3 size={17} /> Dashboard</button><button className={merchantView === 'campaigns' ? 'active' : ''} onClick={() => setMerchantView('campaigns')}><Megaphone size={17} /> Campaigns</button><button className={merchantView === 'audit' ? 'active' : ''} onClick={() => setMerchantView('audit')}><Activity size={17} /> Audit trail</button></aside><div className="merchant-content">{merchantView === 'dashboard' && <MerchantDashboard analytics={analytics} loading={merchantLoading} onOpenCampaign={() => setMerchantView('campaigns')} />}{merchantView === 'campaigns' && <CampaignBuilder campaign={campaign} loading={merchantLoading} onCreate={createCampaign} />}{merchantView === 'audit' && <AuditTrail audit={audit} loading={auditLoading} reload={loadAudit} />}</div></main>}
-    {view === 'buyer' && <AIBuyerView onRequest={requestQuote} quote={quote} loading={buyerLoading} />}
+    {view === 'buyer' && <AIBuyerView onRequest={requestQuote} quote={quote} submittedGoal={submittedBuyerGoal} loading={buyerLoading} />}
 
     <CartDrawer open={cartOpen} cart={cart} budget={budget} onClose={() => setCartOpen(false)} onRemove={removeProduct} onCheckout={openCheckout} />
     <CheckoutPanel summary={checkout} onClose={() => setCheckout(null)} />
