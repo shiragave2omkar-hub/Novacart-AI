@@ -7,11 +7,12 @@ import {
 import { formatINR, shortSpecs } from '../lib/format'
 
 export function ProductImage({ product, compact = false }) {
-  const [failed, setFailed] = useState(false)
-  const image = product?.image_url && !failed ? product.image_url : '/nova-product-placeholder.png'
+  const [failedProductId, setFailedProductId] = useState(null)
+  const productId = product?.id
+  const image = productId && failedProductId !== productId ? `/products/${productId}.jpg` : '/nova-product-placeholder.png'
   return (
     <div className={`product-image ${compact ? 'compact' : ''}`}>
-      <img src={image} alt="" onError={() => setFailed(true)} />
+      <img src={image} alt={product ? `${product.brand} ${product.name}` : ''} onError={() => setFailedProductId(productId)} />
       <span className="product-category"><Package size={12} /> {product?.category}</span>
     </div>
   )
