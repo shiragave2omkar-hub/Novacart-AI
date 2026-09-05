@@ -415,6 +415,169 @@ def validate_campaign_discount(
     }
 
 
+def count_campaign_target_customers(target_category):
+    """Count unique demo laptop buyers without the promoted category."""
+
+    laptop_customer_categories = {}
+
+    for index, order in enumerate(load_sales_data()):
+        items = order.get("items", [])
+        categories = {
+            str(item.get("category", "")).strip()
+            for item in items
+        }
+
+        if "Laptop" not in categories:
+            continue
+
+        # sales_data.json supplies customer IDs. The deterministic order ID
+        # fallback keeps the calculation defined for incomplete demo records.
+        customer_id = str(
+            order.get("customer_id")
+            or order.get("order_id")
+            or f"demo-order-{index}"
+        )
+
+        laptop_customer_categories.setdefault(
+            customer_id,
+            set(),
+        ).update(categories)
+
+    return sum(
+        1
+        for categories in laptop_customer_categories.values()
+        if target_category not in categories
+    )
+
+
+def calculate_campaign_economics(
+    target_category,
+    recommended_products,
+    discount_percent,
+    max_discount_inr,
+):
+    """Return a conservative, deterministic estimate from the demo dataset.
+
+    Expected orders are capped at the synthetic dataset's existing overall
+    accessory-attachment rate. Revenue is modeled from the lowest-priced
+    policy-eligible recommended product, not an average or premium item.
+    This is an estimate only and deliberately excludes costs absent from the
+    dataset, such as COGS, tax, and fulfilment.
+    """
+
+    baseline = analyze_accessory_opportunity()
+    target_customers = count_campaign_target_customers(target_category)
+    historical_attach_rate = baseline.get(
+        "accessory_attach_rate",
+        0.0,
+    )
+
+    eligible_products = [
+        product
+        for product in recommended_products
+        if product.get("category") == target_category
+        and isinstance(product.get("price_inr"), (int, float))
+    ]
+
+    if not eligible_products:
+        return {
+            "label": "Estimated using synthetic demo data",
+            "scenario": "conservative_demo_estimate",
+            "target_customers": target_customers,
+            "expected_orders": 0,
+            "estimated_revenue_inr": 0.0,
+            "discount_cost_inr": 0.0,
+            "net_incremental_revenue_inr": 0.0,
+            "estimated_roi_percent": 0.0,
+            "inputs": {
+                "historical_accessory_attachment_rate": (
+                    historical_attach_rate
+                ),
+                "revenue_product": None,
+            },
+            "assumptions": [
+                "Target customers are demo laptop buyers who have not purchased the promoted category.",
+                "No priced, policy-eligible recommended product was available, so all estimated outcomes are zero.",
+                "This estimate uses synthetic demo data and is not actual campaign performance.",
+            ],
+        }
+
+    revenue_product = min(
+        eligible_products,
+        key=lambda product: product["price_inr"],
+    )
+    revenue_per_order = float(revenue_product["price_inr"])
+
+    # Integer floor prevents the estimate from exceeding the observed
+    # accessory-attachment benchmark in the synthetic sample.
+    expected_orders = int(
+        target_customers * historical_attach_rate / 100
+    )
+
+    discount_per_order = min(
+        revenue_per_order * discount_percent / 100,
+        max_discount_inr,
+    )
+    estimated_revenue = expected_orders * revenue_per_order
+    discount_cost = expected_orders * discount_per_order
+    net_incremental_revenue = estimated_revenue - discount_cost
+    estimated_roi = (
+        net_incremental_revenue / discount_cost * 100
+        if discount_cost > 0
+        else 0.0
+    )
+
+    return {
+        "label": "Estimated using synthetic demo data",
+        "scenario": "conservative_demo_estimate",
+        "target_customers": target_customers,
+        "expected_orders": expected_orders,
+        "estimated_revenue_inr": round(estimated_revenue, 2),
+        "discount_cost_inr": round(discount_cost, 2),
+        "net_incremental_revenue_inr": round(
+            net_incremental_revenue,
+            2,
+        ),
+        "estimated_roi_percent": round(estimated_roi, 2),
+        "inputs": {
+            "historical_accessory_attachment_rate": (
+                historical_attach_rate
+            ),
+            "revenue_product": {
+                "id": revenue_product.get("id"),
+                "name": revenue_product.get("name"),
+                "price_inr": revenue_product.get("price_inr"),
+            },
+            "discount_per_expected_order_inr": round(
+                discount_per_order,
+                2,
+            ),
+        },
+        "assumptions": [
+            "Target customers are unique demo laptop buyers who have not purchased the promoted category.",
+            (
+                "Expected orders use the existing synthetic overall accessory "
+                f"attachment rate of {historical_attach_rate}% and round "
+                "down to a whole order."
+            ),
+            (
+                "Estimated revenue uses the lowest-priced policy-eligible "
+                f"recommended product: {revenue_product.get('name')} "
+                f"at ₹{revenue_product.get('price_inr'):,.0f}."
+            ),
+            (
+                "Discount cost applies the campaign offer and merchant cap "
+                "to each expected order."
+            ),
+            (
+                "Net incremental revenue is estimated revenue less discount "
+                "cost only; it excludes COGS, tax, logistics, and actual "
+                "campaign performance."
+            ),
+        ],
+    }
+
+
 def create_campaign(goal):
     """
     Create a merchant campaign draft using:
@@ -446,6 +609,13 @@ def create_campaign(goal):
 
     # Validate discount policy
     discount_validation = validate_campaign_discount(
+        recommended_products,
+        discount_percent,
+        max_discount_inr,
+    )
+
+    campaign_economics = calculate_campaign_economics(
+        target_category,
         recommended_products,
         discount_percent,
         max_discount_inr,
@@ -525,6 +695,8 @@ def create_campaign(goal):
         "discount_validation": (
             discount_validation
         ),
+
+        "economics": campaign_economics,
 
         "duration_days": 3,
 
