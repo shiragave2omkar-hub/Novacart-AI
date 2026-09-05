@@ -93,7 +93,7 @@ export function CartDrawer({ open, cart, budget, onClose, onRemove, onCheckout }
   </aside></div>
 }
 
-export function CheckoutPanel({ summary, onClose }) {
+export function CheckoutPanel({ summary, paymentState, onClose, onPay }) {
   if (!summary) return null
   const isEmpty = summary.status === 'empty'
   return <div className="modal-layer"><button className="drawer-backdrop" aria-label="Close checkout" onClick={onClose} /><section className="checkout-modal" role="dialog" aria-modal="true" aria-label="Checkout review">
@@ -104,7 +104,8 @@ export function CheckoutPanel({ summary, onClose }) {
       <div className="checkout-lines">{summary.items.map((item) => <div key={item.id}><span>{item.brand} {item.name} <small>x{item.quantity}</small></span><strong>{formatINR(item.subtotal)}</strong></div>)}</div>
       <div className="checkout-total"><span>Exact catalog total</span><strong>{formatINR(summary.total)}</strong></div>
       {summary.budget_inr && <BudgetMeter budget={summary.budget_inr} total={summary.total} showLabel={false} />}
-      <div className="payment-state"><CircleAlert size={18} /><div><strong>Payment sandbox unavailable</strong><p>This prototype has not initiated a Razorpay payment. Confirming is intentionally unavailable until a live payment integration is connected.</p></div></div>
+      {summary.payment_status === 'test_available' ? <button className="button primary full" onClick={onPay} disabled={paymentState?.status === 'processing'}>{paymentState?.status === 'processing' ? 'Verifying payment…' : 'Pay with Razorpay (Test Mode)'}</button> : <div className="payment-state"><CircleAlert size={18} /><div><strong>Payment sandbox unavailable</strong><p>{summary.payment_message || 'Payment has not been processed because the payment integration is not connected.'}</p></div></div>}
+      {paymentState && <div className={`payment-state ${paymentState.status}`}><CircleAlert size={18} /><div><strong>{paymentState.status === 'verified' ? 'Payment verified' : 'Payment not completed'}</strong><p>{paymentState.message}</p></div></div>}
     </>}
   </section></div>
 }

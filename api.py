@@ -23,13 +23,22 @@ from campaign import (
     create_campaign,
 )
 from cart import add_to_cart, get_cart, remove_from_cart
-from checkout import get_checkout_summary
+from checkout import PAYMENT_UNAVAILABLE_MESSAGE, get_checkout_summary
+from payments import (
+    PaymentIntegrationUnavailable,
+    PaymentProviderError,
+    PaymentVerificationFailed,
+    create_test_order,
+    verify_test_payment,
+)
 from tools import load_products, search_products
 
 
 ROOT = Path(__file__).parent
 WEB_DIST = ROOT / "web" / "dist"
 app = Flask(__name__, static_folder=None)
+PAYMENT_OR_CHECKOUT_INTENT = re.compile(r"\b(?:pay(?:ment)?|checkout|check\s*out)\b", re.IGNORECASE)
+PENDING_PAYMENT_ORDERS: dict[str, dict[str, Any]] = {}
 
 
 def json_error(message: str, status: int = 400):
@@ -203,6 +212,24 @@ def detailed_cart() -> dict[str, Any]:
     return {"items": items, "total": cart["total"]}
 
 
+def is_payment_or_checkout_intent(message: str) -> bool:
+    """Route explicit payment requests before any model-driven catalog search."""
+    return bool(PAYMENT_OR_CHECKOUT_INTENT.search(message))
+
+
+def payment_intent_response():
+    """Return the server-authoritative checkout state without charging a payment."""
+    summary = get_checkout_summary()
+    log_event("checkout_requested", {"status": summary.get("status"), "total": summary.get("total")})
+    message = summary.get("message") if summary.get("status") == "empty" else summary.get("payment_message")
+    return jsonify({
+        "message": message,
+        "recommendations": None,
+        "tool_events": [{"name": "get_checkout_summary", "arguments": {}}],
+        "cart": detailed_cart(),
+    })
+
+
 @app.get("/api/health")
 def health():
     return jsonify({"status": "ok", "catalog_count": len(load_products())})
@@ -251,6 +278,9 @@ def chat():
     messages = [{"role": "system", "content": SYSTEM_PROMPT}, *safe_history, {"role": "user", "content": message}]
     trace: list[dict[str, Any]] = []
     log_event("goal_received", {"message": message})
+
+    if is_payment_or_checkout_intent(message):
+        return payment_intent_response()
 
     try:
         response = run_agent(messages, tool_trace=trace)
@@ -351,6 +381,79 @@ def checkout_summary():
         summary["difference_inr"] = summary["total"] - budget if budget is not None else None
     log_event("checkout_requested", {"status": summary.get("status"), "total": summary.get("total")})
     return jsonify(summary)
+
+
+@app.post("/api/payment/create-order")
+def create_payment_order():
+    """Create a Razorpay Test Mode order from the current server cart."""
+    summary = get_checkout_summary()
+    if summary.get("status") == "empty":
+        return json_error(summary["message"], 400)
+
+    try:
+        order = create_test_order(summary)
+    except PaymentIntegrationUnavailable:
+        return json_error(PAYMENT_UNAVAILABLE_MESSAGE, 503)
+    except PaymentProviderError:
+        return json_error("Razorpay Test Mode could not create a payment order. No payment has been processed.", 502)
+
+    PENDING_PAYMENT_ORDERS[order["order_id"]] = {
+        "amount": order["amount"],
+        "currency": order["currency"],
+        "receipt": order["receipt"],
+    }
+    log_event("payment_order_created", {
+        "order_id": order["order_id"],
+        "amount": order["amount"],
+        "currency": order["currency"],
+        "receipt": order["receipt"],
+    })
+    return jsonify({
+        "key_id": order["key_id"],
+        "order_id": order["order_id"],
+        "amount": order["amount"],
+        "currency": order["currency"],
+        "cart": summary,
+    })
+
+
+@app.post("/api/payment/verify")
+def verify_payment():
+    """Verify Razorpay Checkout data before reporting a payment as successful."""
+    body = request.get_json(silent=True) or {}
+    payment_details = {
+        field: str(body.get(field) or "").strip()
+        for field in ("razorpay_order_id", "razorpay_payment_id", "razorpay_signature")
+    }
+    order_id = payment_details["razorpay_order_id"]
+
+    if not all(payment_details.values()):
+        log_event("payment_verification_failed", {"order_id": order_id or None, "reason": "missing_payment_details"})
+        return json_error("Payment was not verified.", 400)
+    if order_id not in PENDING_PAYMENT_ORDERS:
+        log_event("payment_verification_failed", {"order_id": order_id, "reason": "unknown_order"})
+        return json_error("Payment was not verified.", 400)
+
+    try:
+        verify_test_payment(payment_details)
+    except (PaymentIntegrationUnavailable, PaymentVerificationFailed):
+        log_event("payment_verification_failed", {"order_id": order_id, "reason": "signature_not_verified"})
+        return json_error("Payment was not verified.", 400)
+
+    order = PENDING_PAYMENT_ORDERS.pop(order_id)
+    log_event("payment_verified", {
+        "order_id": order_id,
+        "payment_id": payment_details["razorpay_payment_id"],
+        "amount": order["amount"],
+        "currency": order["currency"],
+    })
+    return jsonify({
+        "status": "verified",
+        "message": "Payment verified successfully.",
+        "order_id": order_id,
+        "payment_id": payment_details["razorpay_payment_id"],
+        "cart": detailed_cart(),
+    })
 
 
 @app.get("/api/merchant/analytics")

@@ -199,6 +199,8 @@ h1, h2, h3, p { margin: 0; }
 .checkout-modal .budget-meter { width: 100%; margin-top: 18px; }
 .payment-state, .economics-unavailable { display: flex; align-items: flex-start; gap: 10px; margin-top: 18px; padding: 13px; border: 1px solid #e6c4b9; border-radius: 6px; color: #994b3f; background: #fff7f5; }
 .payment-state p, .economics-unavailable p { margin-top: 4px; color: #7c675f; font-size: 11px; line-height: 1.45; }
+.payment-state.verified { border-color: #b9dbc9; color: #236744; background: #f2faf5; }
+.payment-state.verified p { color: #4f725e; }
 .toast { position: fixed; right: 22px; bottom: 22px; z-index: 90; display: flex; align-items: center; gap: 9px; max-width: min(440px, calc(100vw - 44px)); padding: 12px 12px 12px 14px; border: 1px solid #b7d7c6; border-radius: 7px; color: #225b4a; background: #f2faf5; box-shadow: 0 12px 32px rgba(31, 56, 45, .16); font-size: 13px; font-weight: 650; animation: toast-in .24s ease; }
 .toast.error { border-color: #e4b8b0; color: #9e473a; background: #fff5f3; }
 .toast button { display: grid; width: 22px; height: 22px; place-items: center; margin-left: 5px; padding: 0; border: 0; color: inherit; background: transparent; }

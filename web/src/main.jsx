@@ -8,6 +8,23 @@ import { CartDrawer, CheckoutPanel, Toast } from './components/ui'
 import './styles.css'
 
 const customerStarter = 'I need a coding laptop for college under ₹80,000.'
+const paymentOrCheckoutIntent = /\b(?:pay(?:ment)?|checkout|check\s*out)\b/i
+const razorpayCheckoutScript = 'https://checkout.razorpay.com/v1/checkout.js'
+let razorpayScriptPromise
+
+const loadRazorpayCheckout = () => {
+  if (window.Razorpay) return Promise.resolve(window.Razorpay)
+  if (razorpayScriptPromise) return razorpayScriptPromise
+  razorpayScriptPromise = new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = razorpayCheckoutScript
+    script.async = true
+    script.onload = () => window.Razorpay ? resolve(window.Razorpay) : reject(new Error('Razorpay Checkout could not be loaded.'))
+    script.onerror = () => reject(new Error('Razorpay Checkout could not be loaded.'))
+    document.head.appendChild(script)
+  })
+  return razorpayScriptPromise
+}
 
 function App() {
   const [view, setView] = useState('shop')
@@ -15,6 +32,7 @@ function App() {
   const [cart, setCart] = useState({ items: [], total: 0 })
   const [cartOpen, setCartOpen] = useState(false)
   const [checkout, setCheckout] = useState(null)
+  const [paymentState, setPaymentState] = useState(null)
   const [recommendations, setRecommendations] = useState(null)
   const [response, setResponse] = useState('')
   const [history, setHistory] = useState([])
@@ -57,6 +75,7 @@ function App() {
   const handleChat = async (message) => {
     setChatLoading(true)
     const nextHistory = [...history, { role: 'user', content: message }]
+    const isPaymentOrCheckout = paymentOrCheckoutIntent.test(message)
     try {
       const result = await api.chat({
         message,
@@ -65,12 +84,13 @@ function App() {
       })
       setResponse(result.message || '')
       setHistory([...nextHistory, { role: 'assistant', content: result.message || '' }])
+      if (isPaymentOrCheckout) setRecommendations(null)
       if (result.recommendations) {
         setRecommendations(result.recommendations)
         if (result.recommendations.budget_inr) setBudget(result.recommendations.budget_inr)
       }
       if (result.cart) setCart(result.cart)
-      if (/\b(checkout|check out)\b/i.test(message)) await openCheckout()
+      if (isPaymentOrCheckout) await openCheckout()
     } catch (error) {
       setHistory(nextHistory)
       notify(error.message || 'NovaCart could not complete that request. Your cart has been preserved.', 'error')
@@ -91,8 +111,52 @@ function App() {
   const openCheckout = async () => {
     try {
       setCheckout(await api.checkout(budget))
+      setPaymentState(null)
       setCartOpen(false)
     } catch (error) { notify(error.message, 'error') }
+  }
+
+  const payWithRazorpay = async () => {
+    let verificationStarted = false
+    try {
+      setPaymentState({ status: 'processing', message: 'Creating your Razorpay Test Mode order…' })
+      const order = await api.createPaymentOrder()
+      const Razorpay = await loadRazorpayCheckout()
+      const checkoutInstance = new Razorpay({
+        key: order.key_id,
+        amount: order.amount,
+        currency: order.currency,
+        name: 'NovaCart',
+        description: 'NovaCart Test Mode payment',
+        order_id: order.order_id,
+        handler: async (payment) => {
+          verificationStarted = true
+          setPaymentState({ status: 'processing', message: 'Verifying payment with NovaCart…' })
+          try {
+            const verification = await api.verifyPayment(payment)
+            if (verification.status !== 'verified') throw new Error('Payment was not verified.')
+            setPaymentState({ status: 'verified', message: verification.message })
+            if (verification.cart) setCart(verification.cart)
+            notify(verification.message)
+          } catch (error) {
+            setPaymentState({ status: 'failed', message: error.message || 'Payment was not verified.' })
+            notify(error.message || 'Payment was not verified.', 'error')
+          }
+        },
+        modal: {
+          ondismiss: () => {
+            if (!verificationStarted) setPaymentState({ status: 'cancelled', message: 'Payment was cancelled. No payment was verified.' })
+          },
+        },
+      })
+      checkoutInstance.on('payment.failed', () => {
+        setPaymentState({ status: 'failed', message: 'Payment failed. No payment was verified.' })
+      })
+      checkoutInstance.open()
+    } catch (error) {
+      setPaymentState({ status: 'failed', message: error.message || 'Payment could not be started.' })
+      notify(error.message || 'Payment could not be started.', 'error')
+    }
   }
 
   const createCampaign = async (goal) => {
@@ -132,7 +196,7 @@ function App() {
     {view === 'buyer' && <AIBuyerView onRequest={requestQuote} quote={quote} submittedGoal={submittedBuyerGoal} loading={buyerLoading} />}
 
     <CartDrawer open={cartOpen} cart={cart} budget={budget} onClose={() => setCartOpen(false)} onRemove={removeProduct} onCheckout={openCheckout} />
-    <CheckoutPanel summary={checkout} onClose={() => setCheckout(null)} />
+    <CheckoutPanel summary={checkout} paymentState={paymentState} onClose={() => setCheckout(null)} onPay={payWithRazorpay} />
     <Toast toast={toast} onClose={() => setToast(null)} />
   </div>
 }

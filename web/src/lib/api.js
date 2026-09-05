@@ -14,6 +14,8 @@ export const api = {
   addToCart: (productId, quantity = 1) => request('/api/cart/add', { method: 'POST', body: JSON.stringify({ product_id: productId, quantity }) }),
   removeFromCart: (productId) => request('/api/cart/remove', { method: 'POST', body: JSON.stringify({ product_id: productId }) }),
   checkout: (budget) => request('/api/checkout/summary', { method: 'POST', body: JSON.stringify({ budget_inr: budget }) }),
+  createPaymentOrder: () => request('/api/payment/create-order', { method: 'POST' }),
+  verifyPayment: (payment) => request('/api/payment/verify', { method: 'POST', body: JSON.stringify(payment) }),
   analytics: () => request('/api/merchant/analytics'),
   campaign: (goal) => request('/api/campaign', { method: 'POST', body: JSON.stringify({ goal }) }),
   audit: () => request('/api/audit'),
