@@ -337,5 +337,330 @@
       ],
       "status": "draft"
     }
+  },
+  {
+    "timestamp": "2026-09-05T10:17:14",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905101714",
+      "goal": "Increase laptop accessory sales.",
+      "campaign_category": "USB-C Hub",
+      "recommended_product_ids": [
+        "A054",
+        "A055",
+        "A056"
+      ],
+      "status": "draft"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:18:58",
+    "event": "goal_received",
+    "details": {
+      "message": "I need a coding laptop for college under ₹80,000."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:19:00",
+    "event": "product_searched",
+    "details": {
+      "query": "coding laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L032",
+        "L028",
+        "L002",
+        "L003",
+        "L036",
+        "L034",
+        "L005",
+        "L004",
+        "L030"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:20:00",
+    "event": "product_searched",
+    "details": {
+      "query": "ASUS laptop",
+      "max_price": 80000.0,
+      "category": "laptop",
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L002",
+        "L005",
+        "L004",
+        "L003",
+        "L032",
+        "L028",
+        "L036",
+        "L034",
+        "L031"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:20:07",
+    "event": "goal_received",
+    "details": {
+      "message": "I need a coding laptop for college under 80000 INR."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:20:08",
+    "event": "product_searched",
+    "details": {
+      "query": "laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L032",
+        "L028",
+        "L002",
+        "L036",
+        "L034",
+        "L005",
+        "L004",
+        "L031",
+        "L033"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:21:18",
+    "event": "checkout_requested",
+    "details": {
+      "status": "pending_confirmation",
+      "total": 122479
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:21:18",
+    "event": "ai_buyer_quote_requested",
+    "details": {
+      "goal": "I need a coding laptop under 80000 INR."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:24:58",
+    "event": "product_removed_from_cart",
+    "details": {
+      "product_id": "L001",
+      "source": "web"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:24:58",
+    "event": "product_removed_from_cart",
+    "details": {
+      "product_id": "A027",
+      "source": "web"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:27:44",
+    "event": "goal_received",
+    "details": {
+      "message": "a mouse under 1000"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:27:45",
+    "event": "product_searched",
+    "details": {
+      "query": "mouse",
+      "max_price": 1000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "A027",
+        "A005",
+        "A014",
+        "A012",
+        "A002",
+        "A031",
+        "A025",
+        "A016",
+        "A017",
+        "A020"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:30:52",
+    "event": "goal_received",
+    "details": {
+      "message": "I need a laptop for coding under ₹80,000."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:30:53",
+    "event": "product_searched",
+    "details": {
+      "query": "laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L032",
+        "L028",
+        "L002",
+        "L036",
+        "L034",
+        "L005",
+        "L004",
+        "L031",
+        "L033"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:31:14",
+    "event": "goal_received",
+    "details": {
+      "message": "Show me ASUS laptops under ₹80,000 for college."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:31:15",
+    "event": "product_searched",
+    "details": {
+      "query": "ASUS laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L002",
+        "L005",
+        "L004",
+        "L003",
+        "L032",
+        "L028",
+        "L036",
+        "L034",
+        "L031"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:32:00",
+    "event": "goal_received",
+    "details": {
+      "message": "I need a laptop for machine learning under ₹80,000. GPU is more important than weight."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:32:02",
+    "event": "product_searched",
+    "details": {
+      "query": "laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L032",
+        "L028",
+        "L002",
+        "L036",
+        "L034",
+        "L005",
+        "L004",
+        "L031",
+        "L033"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:32:39",
+    "event": "goal_received",
+    "details": {
+      "message": "I need a laptop for machine learning under ₹80,000. GPU is more important than weight."
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:37:20",
+    "event": "product_added_to_cart",
+    "details": {
+      "product_id": "L038",
+      "quantity": 1,
+      "source": "web"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:37:31",
+    "event": "checkout_requested",
+    "details": {
+      "status": "pending_confirmation",
+      "total": 60490
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:40:37",
+    "event": "goal_received",
+    "details": {
+      "message": "Best laptop for coding under ₹80k"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:40:38",
+    "event": "product_searched",
+    "details": {
+      "query": "laptop",
+      "max_price": 80000.0,
+      "category": null,
+      "results_count": 10,
+      "result_ids": [
+        "L001",
+        "L032",
+        "L028",
+        "L002",
+        "L036",
+        "L034",
+        "L005",
+        "L004",
+        "L031",
+        "L033"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:41:23",
+    "event": "checkout_requested",
+    "details": {
+      "status": "pending_confirmation",
+      "total": 60490
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:41:36",
+    "event": "campaign_created",
+    "details": {
+      "campaign_id": "NC-CAMP-20260905104136",
+      "goal": "Increase laptop accessory sales.",
+      "campaign_category": "USB-C Hub",
+      "recommended_product_ids": [
+        "A054",
+        "A055",
+        "A056"
+      ],
+      "status": "draft"
+    }
+  },
+  {
+    "timestamp": "2026-09-05T10:42:33",
+    "event": "ai_buyer_quote_requested",
+    "details": {
+      "goal": "I need a coding laptop under ₹80,000."
+    }
   }
 ]

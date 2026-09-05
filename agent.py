@@ -390,7 +390,7 @@ def execute_tool(tool_name, arguments):
     }
  
 
-def run_agent(messages):
+def run_agent(messages, tool_trace=None):
     while True:
         response = client.chat.completions.create(
             model="nvidia/nemotron-3-super-120b-a12b",
@@ -450,6 +450,13 @@ def run_agent(messages):
                     tool_call.function.name,
                     arguments
                 )
+
+                if tool_trace is not None:
+                    tool_trace.append({
+                        "name": tool_call.function.name,
+                        "arguments": arguments,
+                        "result": result,
+                    })
 
                 messages.append({
                     "role": "tool",
