@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-AUDIT_FILE = Path(__file__).parent / "audit_log.json"
+AUDIT_FILE = Path("/tmp/novacart_audit_log.json") if Path("/tmp").exists() else Path(__file__).parent / "audit_log.json"
 
 
 def log_event(event, details=None):
