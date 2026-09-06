@@ -1,8 +1,9 @@
 from tools import load_products
 import json
 from pathlib import Path
+import os
 
-CART_FILE = Path(__file__).parent / "cart.json"
+CART_FILE = Path("/tmp/novacart_cart.json") if os.getenv("VERCEL") else Path(__file__).parent / "cart.json"
 
 
 def load_cart():
